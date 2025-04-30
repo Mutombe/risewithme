@@ -138,15 +138,15 @@ function Navbar() {
 
   // Dropdown menu items
   const resourcesDropdown = [
-    { name: 'Articles', path: 'resources/articles' },
-    { name: 'Workshops', path: 'resources/workshops' },
-    { name: 'Self-Help Tools', path: 'resources/tools' }
+    { name: 'Articles', path: 'resources/' },
+    { name: 'Workshops', path: 'resources/' },
+    { name: 'Self-Help Tools', path: 'resources/' }
   ];
 
   const therapistsDropdown = [
-    { name: 'Our Team', path: 'therapists/team' },
-    { name: 'Specialties', path: 'therapists/specialties' },
-    { name: 'Training', path: 'therapists/training' }
+    { name: 'Our Team', path: 'therapists/' },
+    { name: 'Specialties', path: 'therapists/' },
+    { name: 'Training', path: 'therapists/' }
   ];
 
   return (

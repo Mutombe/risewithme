@@ -38,7 +38,7 @@ function AboutPage() {
                 <p className="text-gray-600 mb-6">
                   Rise with Me Psychotherapy and Wellness was founded in 2018 with a vision to create a 
                   therapeutic space that honors the whole person—mind, body, and spirit. Our founder, 
-                  Dr. Elizabeth Chen, recognized the need for an integrative approach to mental health 
+                  Dr. Lilian Shonhiwa recognized the need for an integrative approach to mental health 
                   that combines evidence-based psychological interventions with holistic wellness practices.
                 </p>
                 <p className="text-gray-600">
@@ -143,7 +143,7 @@ function AboutPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
               {[
                 {
-                  name: 'Dr. Elizabeth Chen',
+                  name: 'Dr. Lilian Shonhiwa',
                   title: 'Founder & Clinical Director',
                   image: '/api/placeholder/400/400',
                   bio: 'Licensed Clinical Psychologist with over 15 years of experience specializing in trauma recovery and mindfulness-based therapies.'

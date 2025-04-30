@@ -39,7 +39,7 @@ function TherapistsPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
               {[
                 {
-                  name: 'Dr. Elizabeth Chen',
+                  name: 'Dr. Lilian Shonhiwa',
                   title: 'Clinical Psychologist',
                   image: '/api/placeholder/400/500',
                   specialties: ['Trauma Recovery', 'Mindfulness-Based Therapies', 'Anxiety Disorders'],
