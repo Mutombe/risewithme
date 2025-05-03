@@ -3,26 +3,26 @@ import React from 'react';
 import { Calendar, Users, Heart, Mail, Phone, MapPin, Clock, ArrowRight, Menu, X, ChevronDown } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 
-// Logo Component
+// Logo Component with new turquoise color scheme
 const Logo = () => (
   <div className="flex items-center">
     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M20 5C11.716 5 5 11.716 5 20C5 28.284 11.716 35 20 35C28.284 35 35 28.284 35 20C35 11.716 28.284 5 20 5Z" fill="#E2F5F2" />
-      <path d="M20 8C19.209 8 18.5 8.82 18.5 9.5C18.5 11.875 18.5 17.5 18.5 20C18.5 22.5 21 24.5 24 25.5C24.5 25.685 25 24.5 24.5 24C23 22.5 21.5 21 21.5 20C21.5 17.5 21.5 11.875 21.5 9.5C21.5 8.82 20.791 8 20 8Z" fill="#14B8A6" />
-      <path d="M20 8C19.209 8 18.5 8.82 18.5 9.5C18.5 11.875 18.5 17.5 18.5 20C18.5 22.5 16 24.5 13 25.5C12.5 25.685 12 24.5 12.5 24C14 22.5 15.5 21 15.5 20C15.5 17.5 15.5 11.875 15.5 9.5C15.5 8.82 16.209 8 17 8" fill="#14B8A6" />
+      <path d="M20 5C11.716 5 5 11.716 5 20C5 28.284 11.716 35 20 35C28.284 35 35 28.284 35 20C35 11.716 28.284 5 20 5Z" fill="#E0F7F5" />
+      <path d="M20 8C19.209 8 18.5 8.82 18.5 9.5C18.5 11.875 18.5 17.5 18.5 20C18.5 22.5 21 24.5 24 25.5C24.5 25.685 25 24.5 24.5 24C23 22.5 21.5 21 21.5 20C21.5 17.5 21.5 11.875 21.5 9.5C21.5 8.82 20.791 8 20 8Z" fill="#20B2AA" />
+      <path d="M20 8C19.209 8 18.5 8.82 18.5 9.5C18.5 11.875 18.5 17.5 18.5 20C18.5 22.5 16 24.5 13 25.5C12.5 25.685 12 24.5 12.5 24C14 22.5 15.5 21 15.5 20C15.5 17.5 15.5 11.875 15.5 9.5C15.5 8.82 16.209 8 17 8" fill="#20B2AA" />
     </svg>
     <span className="ml-3 text-xl font-semibold hidden md:inline-block">
-      <span className="text-teal-600">Rise with Me</span>
-      <span className="text-gray-700"> Psychotherapy</span>
+      <span className="text-teal-500">Raphaela</span>
+      <span className="text-cyan-800"> Psychotherapy & Wellness</span>
     </span>
   </div>
 );
 
-// Appointment Button Component
+// Appointment Button Component with updated turquoise
 const AppointmentButton = ({ fullWidth = false }) => (
   <button
-    className={`bg-teal-600 hover:bg-teal-700 text-white py-2 px-4 rounded-md transition-colors 
-                flex items-center justify-center text-sm font-medium ${fullWidth ? 'w-full' : ''}`}
+    className={`bg-teal-500 hover:bg-teal-600 text-white py-2 px-4 rounded-md transition-colors 
+                flex items-center justify-center text-sm font-medium shadow-md ${fullWidth ? 'w-full' : ''}`}
     aria-label="Book an appointment"
   >
     <Calendar size={16} className="mr-2" />
@@ -48,8 +48,8 @@ const DropdownMenu = ({ title, items, isActive, currentPage, setCurrentPage, clo
     <div className="relative">
       <button
         onClick={toggleDropdown}
-        className={`flex items-center text-sm font-medium transition-colors hover:text-teal-600 focus:outline-none
-                   ${isActive ? 'text-teal-600' : 'text-gray-700'}`}
+        className={`flex items-center text-sm font-medium transition-colors hover:text-teal-500 focus:outline-none
+                   ${isActive ? 'text-teal-500' : 'text-gray-700'}`}
         aria-expanded={isOpen}
         aria-haspopup="true"
       >
@@ -65,8 +65,8 @@ const DropdownMenu = ({ title, items, isActive, currentPage, setCurrentPage, clo
                 key={item.path}
                 to={`/${item.path}`}
                 onClick={() => handleItemClick(item.path)}
-                className={`block px-4 py-2 text-sm hover:bg-gray-100 ${
-                  currentPage === item.path ? 'text-teal-600 bg-gray-50' : 'text-gray-700'
+                className={`block px-4 py-2 text-sm hover:bg-teal-50 ${
+                  currentPage === item.path ? 'text-teal-500 bg-teal-50' : 'text-gray-700'
                 }`}
               >
                 {item.name}
@@ -152,7 +152,7 @@ function Navbar() {
   return (
     <nav 
       className={`fixed w-full z-50 transition-all duration-300 
-                ${isScrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'}
+                ${isScrolled ? 'bg-white shadow-md py-2' : 'bg-white shadow-md py-2'}
                 ${!isScrolled && currentPage === 'home' ? 'text-white' : 'text-gray-800'}`}
     >
       <div className="container mx-auto px-4 md:px-6">
@@ -169,9 +169,9 @@ function Navbar() {
                 key={link.path}
                 to={`/${link.path === 'home' ? '' : link.path}`}
                 onClick={() => setCurrentPage(link.path)}
-                className={`text-sm font-medium transition-colors hover:text-teal-600 ${
-                  currentPage === link.path ? 'text-teal-600' : 
-                  (!isScrolled && currentPage === 'home' ? 'text-white' : 'text-gray-700')
+                className={`text-sm font-medium transition-colors hover:text-teal-500 ${
+                  currentPage === link.path ? 'text-teal-500' : 
+                  (!isScrolled && currentPage === 'home' ? 'text-gray-700' : 'text-gray-700')
                 }`}
               >
                 {link.name}
@@ -199,9 +199,9 @@ function Navbar() {
             <Link
               to="/contact"
               onClick={() => setCurrentPage('contact')}
-              className={`text-sm font-medium transition-colors hover:text-teal-600 ${
-                currentPage === 'contact' ? 'text-teal-600' : 
-                (!isScrolled && currentPage === 'home' ? 'text-white' : 'text-gray-700')
+              className={`text-sm font-medium transition-colors hover:text-teal-500 ${
+                currentPage === 'contact' ? 'text-teal-500' : 
+                (!isScrolled && currentPage === 'home' ? 'text-gray-700' : 'text-gray-700')
               }`}
             >
               Contact
@@ -210,9 +210,9 @@ function Navbar() {
             <Link
               to="/faq"
               onClick={() => setCurrentPage('faq')}
-              className={`text-sm font-medium transition-colors hover:text-teal-600 ${
-                currentPage === 'faq' ? 'text-teal-600' : 
-                (!isScrolled && currentPage === 'home' ? 'text-white' : 'text-gray-700')
+              className={`text-sm font-medium transition-colors hover:text-teal-500 ${
+                currentPage === 'faq' ? 'text-teal-500' : 
+                (!isScrolled && currentPage === 'home' ? 'text-gray-700' : 'text-gray-700')
               }`}
             >
               FAQ
@@ -250,11 +250,11 @@ function Navbar() {
         className={`fixed top-0 right-0 h-full w-4/5 max-w-sm bg-white z-50 shadow-lg transform transition-transform duration-300 ease-in-out overflow-y-auto md:hidden
                   ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}
       >
-        <div className="flex justify-between items-center p-4 border-b">
+        <div className="flex justify-between items-center p-4 border-b border-teal-100">
           <Logo />
           <button 
             onClick={closeMobileMenu}
-            className="text-gray-700 hover:text-teal-600 focus:outline-none"
+            className="text-gray-700 hover:text-teal-500 focus:outline-none"
             aria-label="Close menu"
           >
             <X size={24} />
@@ -272,7 +272,7 @@ function Navbar() {
                   closeMobileMenu();
                 }}
                 className={`py-2 text-base font-medium ${
-                  currentPage === link.path ? 'text-teal-600' : 'text-gray-700'
+                  currentPage === link.path ? 'text-teal-500' : 'text-gray-700'
                 }`}
               >
                 {link.name}
@@ -292,7 +292,7 @@ function Navbar() {
                       closeMobileMenu();
                     }}
                     className={`block text-sm ${
-                      currentPage === item.path ? 'text-teal-600' : 'text-gray-600'
+                      currentPage === item.path ? 'text-teal-500' : 'text-gray-600'
                     }`}
                   >
                     {item.name}
@@ -313,7 +313,7 @@ function Navbar() {
                       closeMobileMenu();
                     }}
                     className={`block text-sm ${
-                      currentPage === item.path ? 'text-teal-600' : 'text-gray-600'
+                      currentPage === item.path ? 'text-teal-500' : 'text-gray-600'
                     }`}
                   >
                     {item.name}
@@ -329,7 +329,7 @@ function Navbar() {
                 closeMobileMenu();
               }}
               className={`py-2 text-base font-medium ${
-                currentPage === 'contact' ? 'text-teal-600' : 'text-gray-700'
+                currentPage === 'contact' ? 'text-teal-500' : 'text-gray-700'
               }`}
             >
               Contact
@@ -342,7 +342,7 @@ function Navbar() {
                 closeMobileMenu();
               }}
               className={`py-2 text-base font-medium ${
-                currentPage === 'faq' ? 'text-teal-600' : 'text-gray-700'
+                currentPage === 'faq' ? 'text-teal-500' : 'text-gray-700'
               }`}
             >
               FAQ
