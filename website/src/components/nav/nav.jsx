@@ -11,9 +11,9 @@ const Logo = () => (
       <path d="M20 8C19.209 8 18.5 8.82 18.5 9.5C18.5 11.875 18.5 17.5 18.5 20C18.5 22.5 21 24.5 24 25.5C24.5 25.685 25 24.5 24.5 24C23 22.5 21.5 21 21.5 20C21.5 17.5 21.5 11.875 21.5 9.5C21.5 8.82 20.791 8 20 8Z" fill="#20B2AA" />
       <path d="M20 8C19.209 8 18.5 8.82 18.5 9.5C18.5 11.875 18.5 17.5 18.5 20C18.5 22.5 16 24.5 13 25.5C12.5 25.685 12 24.5 12.5 24C14 22.5 15.5 21 15.5 20C15.5 17.5 15.5 11.875 15.5 9.5C15.5 8.82 16.209 8 17 8" fill="#20B2AA" />
     </svg>
-    <span className="ml-3 text-xl font-semibold hidden md:inline-block">
+    <span className="ml-3 text-xl font-semibold md:inline-block">
       <span className="text-teal-500">Raphaela</span>
-      <span className="text-cyan-800"> Psychotherapy & Wellness</span>
+      <span className="text-cyan-800"> Psychotherapy</span>
     </span>
   </div>
 );
@@ -229,9 +229,9 @@ function Navbar() {
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           >
             {isMenuOpen ? (
-              <X size={24} className={!isScrolled && currentPage === 'home' ? 'text-white' : 'text-gray-700'} />
+              <X size={24} className={!isScrolled && currentPage === 'home' ? 'text-gray-700' : 'text-gray-700'} />
             ) : (
-              <Menu size={24} className={!isScrolled && currentPage === 'home' ? 'text-white' : 'text-gray-700'} />
+              <Menu size={24} className={!isScrolled && currentPage === 'home' ? 'text-gray-700' : 'text-gray-700'} />
             )}
           </button>
         </div>
