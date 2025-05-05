@@ -10,7 +10,7 @@ function ServicesPage() {
   return (
     <div className="font-sans">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-teal-600 to-teal-500 py-16 md:py-24">
+      <section className="relative bg-gradient-to-r from-teal-600 to-teal-500 py-16 md:py-24 pt-24">
         <div className="absolute inset-0 bg-black opacity-10"></div>
         <div className="container mx-auto px-4 md:px-6 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
