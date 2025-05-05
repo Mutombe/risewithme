@@ -1,187 +1,325 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
-import { Calendar, Users, Heart, Mail, Phone, MapPin, Clock, ArrowRight, Menu, X, Sun, ChevronRight, MessageSquare, Award, BookOpen, Leaf } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Toaster, toast } from 'sonner';
+import { 
+  Heart, Mail, Phone, MapPin, 
+  Calendar, Users, ArrowRight, 
+  Award, BookOpen, Shield, Star, 
+  MessageSquare, Check, Briefcase
+} from 'lucide-react';
 
 function AboutPage() {
-    return (
-      <div>
-        {/* Hero Section */}
-        <section className="relative bg-teal-600 py-20">
-          <div className="absolute inset-0 bg-black opacity-10"></div>
-          <div className="container mx-auto px-4 md:px-6 relative z-10">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              className="max-w-4xl mx-auto text-center"
-            >
-              <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">About Us</h1>
-              <p className="text-xl text-white opacity-90">
-                Our story, values, and commitment to mental health and wellness.
-              </p>
-            </motion.div>
+  return (
+    <div className="font-sans">
+      {/* Hero Section */}
+      <section className="relative bg-teal-600 py-16 md:py-24 pt-24">
+        <div className="absolute inset-0 bg-black opacity-10"></div>
+        <div className="container mx-auto px-4 md:px-6 relative z-10">
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="text-3xl md:text-5xl font-bold text-white mb-4">About Lilian Shonhiwa</h1>
+            <p className="text-lg md:text-xl text-white opacity-90 mb-6">
+              Registered Psychotherapist (Qualifying), MACP, MBA, BBA, SSW
+            </p>
+            <div className="flex flex-wrap justify-center gap-4">
+              <a 
+                href="tel:2894023685" 
+                className="bg-white bg-opacity-20 hover:bg-opacity-30 text-teal-700 px-4 py-2 rounded-lg flex items-center transition-all"
+              >
+                <Phone size={18} className="mr-2" /> (289) 402-3685
+              </a>
+              <a 
+                href="#contact" 
+                className="bg-teal-500 hover:bg-teal-600 text-white px-4 py-2 rounded-lg flex items-center transition-all"
+              >
+                <Mail size={18} className="mr-2" /> Contact Me
+              </a>
+            </div>
           </div>
-        </section>
-  
-        {/* Our Story Section */}
-        <section className="py-16 md:py-24">
-          <div className="container mx-auto px-4 md:px-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-              <motion.div
-                initial={{ opacity: 0, x: -30 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.7 }}
-              >
-                <h2 className="text-3xl font-bold text-gray-800 mb-6">Our Story</h2>
-                <p className="text-gray-600 mb-6">
-                  Rise with Me Psychotherapy and Wellness was founded in 2018 with a vision to create a 
-                  therapeutic space that honors the whole person—mind, body, and spirit. Our founder, 
-                  Dr. Lilian Shonhiwa recognized the need for an integrative approach to mental health 
-                  that combines evidence-based psychological interventions with holistic wellness practices.
+        </div>
+      </section>
+
+      {/* Profile Section */}
+      <section className="py-12 md:py-20">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <div className="order-2 md:order-1">
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">Welcome</h2>
+              <p className="text-gray-700 mb-4">
+                Feeling overwhelmed due to anxiety, depression, trauma, or the effects of domestic violence? I am here to help. My desire is to make you feel safe, understood, and supported as we work towards your healing and change.
+              </p>
+              <p className="text-gray-700 mb-6">
+                I offer a calm, compassionate space to explore emotions, develop coping strategies, and rebuild confidence. Drawing from vast years of focused experience in helping women who have faced domestic violence, I also support men experiencing domestic abuse, teens navigating adolescence, couples seeking to strengthen their relationships, families working toward harmony and those experiencing pre and post natal depression.
+              </p>
+              <div className="bg-teal-50 border-l-4 border-teal-500 p-4 mb-6">
+                <p className="italic text-gray-700">
+                  "I work with individuals navigating depression or trauma, often rooted in relationships or family dynamics. In our initial sessions, we'll take the time to understand what you're going through and begin building a personalized plan to help you heal and regain a sense of balance and control in your life. Many of my clients start to notice a shift within the first few weeks."
                 </p>
-                <p className="text-gray-600">
-                  What began as a small practice has grown into a thriving wellness center with a team 
-                  of dedicated professionals committed to fostering healing, growth, and transformation. 
-                  We believe that everyone deserves compassionate, personalized care that acknowledges 
-                  their unique experiences and goals.
-                </p>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 0, x: 30 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.7 }}
-                className="relative"
-              >
-                <div className="bg-green-100 rounded-lg p-8 relative z-10">
-                  <div className="bg-white rounded-lg shadow-xl p-6">
-                    <Leaf size={40} className="text-green-500 mb-4" />
-                    <h3 className="text-2xl font-semibold text-gray-800 mb-4">Our Mission</h3>
-                    <p className="text-gray-600">
-                      To provide a safe, nurturing environment where individuals can explore their challenges, 
-                      discover their strengths, and develop the skills needed to create lasting positive change 
-                      in their lives and relationships.
-                    </p>
+              </div>
+              <div className="flex flex-wrap gap-2 mb-6">
+                <span className="bg-teal-100 text-teal-800 px-3 py-1 rounded-full text-sm">Anxiety</span>
+                <span className="bg-teal-100 text-teal-800 px-3 py-1 rounded-full text-sm">Depression</span>
+                <span className="bg-teal-100 text-teal-800 px-3 py-1 rounded-full text-sm">Trauma</span>
+                <span className="bg-teal-100 text-teal-800 px-3 py-1 rounded-full text-sm">Domestic Violence</span>
+                <span className="bg-teal-100 text-teal-800 px-3 py-1 rounded-full text-sm">Relationships</span>
+              </div>
+            </div>
+            <div className="order-1 md:order-2 flex justify-center">
+              <div className="relative">
+                <div className="absolute -top-4 -left-4 w-full h-full bg-teal-200 rounded-lg"></div>
+                <img 
+                  src="/lilian.jpeg" 
+                  alt="Lilian Shonhiwa" 
+                  className="w-64 md:w-80 h-auto object-cover rounded-lg shadow-lg relative z-10"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Approach Section */}
+      <section className="py-12 md:py-20 bg-gray-50">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">My Therapeutic Approach</h2>
+            <p className="text-gray-600 max-w-3xl mx-auto">
+              I specialize in CBT, Trauma, EFT and Talk therapy to help you manage and collaboratively work on your healing. I am eager to help you navigate life issues and include life coaching if needed through Solution Focused Therapy.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {[
+              {
+                icon: <Shield size={28} className="text-teal-500" />,
+                title: "CBT Therapy",
+                description: "I start with Cognitive Behavioral Therapy (CBT) because it provides a strong foundation for understanding how your thoughts influence your emotions and experiences."
+              },
+              {
+                icon: <Heart size={28} className="text-teal-500" />,
+                title: "Trauma-Focused Care",
+                description: "My approach to trauma is compassionate and client-centered, focusing on creating safety before processing difficult experiences."
+              },
+              {
+                icon: <MessageSquare size={28} className="text-teal-500" />,
+                title: "Talk Therapy",
+                description: "Through open dialogue, we'll explore your concerns in a judgment-free environment, focusing on what matters most to you."
+              },
+              {
+                icon: <Star size={28} className="text-teal-500" />,
+                title: "Emotionally Focused Therapy",
+                description: "EFT helps identify emotional patterns that affect relationships and personal wellbeing, creating new pathways to connection."
+              },
+              {
+                icon: <Check size={28} className="text-teal-500" />,
+                title: "Solution Focused",
+                description: "This approach emphasizes solutions rather than problems, focusing on achievable goals and positive outcomes."
+              },
+              {
+                icon: <BookOpen size={28} className="text-teal-500" />,
+                title: "Christian Counseling",
+                description: "I also offer Christian counseling for those who identify with Christianity, integrating faith perspectives when desired."
+              }
+            ].map((service, index) => (
+              <div key={index} className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-all">
+                <div className="mb-4">{service.icon}</div>
+                <h3 className="text-xl font-semibold text-gray-800 mb-2">{service.title}</h3>
+                <p className="text-gray-600">{service.description}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-12 text-center">
+            <p className="text-gray-700 mb-6">
+              As we work together, I commit to support you all the way. From there, we can integrate other therapeutic approaches as needed to best suit your unique journey.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Qualifications Section */}
+      <section className="py-12 md:py-20">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <div>
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">Qualifications & Experience</h2>
+              <div className="space-y-4">
+                <div className="flex">
+                  <div className="mr-4 mt-1">
+                    <Award className="text-teal-500" size={24} />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-800">Education</h3>
+                    <p className="text-gray-600">Masters in Counseling and Psychology, Yorkville University</p>
+                    <p className="text-gray-600">Master of Business Administration (MBA)</p>
+                    <p className="text-gray-600">Bachelor of Business Administration (BBA)</p>
+                    <p className="text-gray-600">Social Service Worker (SSW)</p>
                   </div>
                 </div>
-                <div className="absolute top-0 right-0 w-64 h-64 bg-teal-100 rounded-full -z-10 -mt-10 -mr-10"></div>
-              </motion.div>
-            </div>
-          </div>
-        </section>
-  
-        {/* Values Section */}
-        <section className="py-16 md:py-24 bg-gray-50">
-          <div className="container mx-auto px-4 md:px-6">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Core Values</h2>
-              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                These principles guide our approach to therapy and inform every interaction we have with our clients.
-              </p>
-            </div>
-  
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {[
-                {
-                  icon: <Heart size={32} className="text-teal-500" />,
-                  title: 'Compassion',
-                  description: 'We approach each client with genuine empathy, warmth, and unconditional positive regard.'
-                },
-                {
-                  icon: <Award size={32} className="text-teal-500" />,
-                  title: 'Excellence',
-                  description: 'We are committed to providing the highest quality care through ongoing education and evidence-based practices.'
-                },
-                {
-                  icon: <Users size={32} className="text-teal-500" />,
-                  title: 'Inclusivity',
-                  description: 'We celebrate diversity and strive to create a welcoming environment for people of all backgrounds and identities.'
-                },
-                {
-                  icon: <Leaf size={32} className="text-teal-500" />,
-                  title: 'Growth',
-                  description: 'We believe in the innate capacity for healing and personal development that exists within each person.'
-                },
-                {
-                  icon: <BookOpen size={32} className="text-teal-500" />,
-                  title: 'Empowerment',
-                  description: 'We aim to equip clients with the knowledge, skills, and resources to become active participants in their wellness journey.'
-                },
-                {
-                  icon: <MessageSquare size={32} className="text-teal-500" />,
-                  title: 'Collaboration',
-                  description: 'We work together with our clients and with other healthcare providers to ensure comprehensive, coordinated care.'
-                }
-              ].map((value, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow"
-                >
-                  <div className="mb-4">{value.icon}</div>
-                  <h3 className="text-xl font-semibold mb-3">{value.title}</h3>
-                  <p className="text-gray-600">{value.description}</p>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </section>
-  
-        {/* Team Intro Section */}
-        <section className="py-16 md:py-24">
-          <div className="container mx-auto px-4 md:px-6">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Leadership Team</h2>
-              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                Meet the experienced professionals who guide our practice and ensure we deliver exceptional care.
-              </p>
-            </div>
-  
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-              {[
-                {
-                  name: 'Dr. Lilian Shonhiwa',
-                  title: 'Founder & Clinical Director',
-                  image: '/api/placeholder/400/400',
-                  bio: 'Licensed Clinical Psychologist with over 15 years of experience specializing in trauma recovery and mindfulness-based therapies.'
-                },
-                {
-                  name: 'Dr. Marcus Johnson',
-                  title: 'Associate Director',
-                  image: '/api/placeholder/400/400',
-                  bio: 'Licensed Marriage and Family Therapist with expertise in couples therapy, family systems, and multicultural counseling approaches.'
-                },
-                {
-                  name: 'Sarah Williams, LCSW',
-                  title: 'Wellness Program Coordinator',
-                  image: '/api/placeholder/400/400',
-                  bio: 'Licensed Clinical Social Worker specializing in integrative approaches to anxiety, depression, and stress management.'
-                }
-              ].map((member, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ duration: 0.6, delay: index * 0.2 }}
-                  className="bg-white rounded-xl overflow-hidden shadow-md"
-                >
-                  <img src={member.image} alt={member.name} className="w-full h-64 object-cover" />
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold text-gray-800">{member.name}</h3>
-                    <p className="text-teal-600 mb-4">{member.title}</p>
-                    <p className="text-gray-600">{member.bio}</p>
+                
+                <div className="flex">
+                  <div className="mr-4 mt-1">
+                    <Briefcase className="text-teal-500" size={24} />
                   </div>
-                </motion.div>
-              ))}
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-800">Professional Experience</h3>
+                    <p className="text-gray-600">3+ years in clinical practice</p>
+                    <p className="text-gray-600">Specialized experience working with domestic violence survivors</p>
+                  </div>
+                </div>
+                
+                <div className="flex">
+                  <div className="mr-4 mt-1">
+                    <Check className="text-teal-500" size={24} />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-800">Licensing</h3>
+                    <p className="text-gray-600">Registered Psychotherapist (Qualifying) with the Province of Ontario</p>
+                    <p className="text-gray-600">Registration #18077</p>
+                    <p className="text-gray-600">Supervised by Bavly Kost (Ontario / 004854)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-teal-50 p-8 rounded-lg">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">Endorsements</h3>
+              
+              <div className="bg-white p-4 rounded-lg mb-4 shadow-sm">
+                <p className="text-gray-600 italic mb-3">
+                  "Lilian is an extremely insightful and analytical clinician who puts her whole self in finding the right path for her clients, walking with them every step of the way. Her light touch of humor and warm presence allows her to connect easily with anyone."
+                </p>
+                <p className="text-gray-800 font-medium">— Bavly Kost, Registered Psychotherapist, BEd, MA, MPS, RP, OCT</p>
+              </div>
+              
+              <div className="bg-white p-4 rounded-lg shadow-sm">
+                <p className="text-gray-600 italic mb-3">
+                  "Karen Rezk endorses Lilian Shonhiwa"
+                </p>
+                <p className="text-gray-800 font-medium">— Karen Rezk, Registered Psychotherapist (Qualifying), RPQ, MDiv, MScA, RN</p>
+              </div>
             </div>
           </div>
-        </section>
-      </div>
-    );
-  }
+        </div>
+      </section>
+
+      {/* Services Info */}
+      <section className="py-12 md:py-20 bg-gray-50">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <Users size={28} className="text-teal-500 mb-4" />
+              <h3 className="text-xl font-semibold text-gray-800 mb-3">Who I Work With</h3>
+              <ul className="space-y-2 text-gray-600">
+                <li className="flex items-center">
+                  <Check size={16} className="text-teal-500 mr-2" />
+                  <span>Individuals (adults)</span>
+                </li>
+                <li className="flex items-center">
+                  <Check size={16} className="text-teal-500 mr-2" />
+                  <span>Couples</span>
+                </li>
+                <li className="flex items-center">
+                  <Check size={16} className="text-teal-500 mr-2" />
+                  <span>Families</span>
+                </li>
+                <li className="flex items-center">
+                  <Check size={16} className="text-teal-500 mr-2" />
+                  <span>Teens</span>
+                </li>
+                <li className="flex items-center">
+                  <Check size={16} className="text-teal-500 mr-2" />
+                  <span>Elders (65+)</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <Calendar size={28} className="text-teal-500 mb-4" />
+              <h3 className="text-xl font-semibold text-gray-800 mb-3">Session Information</h3>
+              <ul className="space-y-3 text-gray-600">
+                <li className="flex items-start">
+                  <MapPin size={18} className="text-teal-500 mr-2 mt-1" />
+                  <div>
+                    <span className="font-medium">Format:</span> Virtual (video/phone), In-person (by arrangement)
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <Calendar size={18} className="text-teal-500 mr-2 mt-1" />
+                  <div>
+                    <span className="font-medium">Availability:</span> Weekday evenings and all day weekends
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <MapPin size={18} className="text-teal-500 mr-2 mt-1" />
+                  <div>
+                    <span className="font-medium">Locations:</span> Grimsby (L3M) and Burlington (L7T)
+                  </div>
+                </li>
+              </ul>
+            </div>
+            
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <MessageSquare size={28} className="text-teal-500 mb-4" />
+              <h3 className="text-xl font-semibold text-gray-800 mb-3">Fees & Payment</h3>
+              <ul className="space-y-3 text-gray-600">
+                <li className="flex items-center">
+                  <Check size={16} className="text-teal-500 mr-2" />
+                  <span>Individual Sessions: $100</span>
+                </li>
+                <li className="flex items-center">
+                  <Check size={16} className="text-teal-500 mr-2" />
+                  <span>Couple Sessions: $120</span>
+                </li>
+                <li className="flex items-center">
+                  <Check size={16} className="text-teal-500 mr-2" />
+                  <span>Sliding scale available for eligible clients</span>
+                </li>
+                <li className="flex items-center">
+                  <Check size={16} className="text-teal-500 mr-2" />
+                  <span>Free 15-minute consultation</span>
+                </li>
+                <li className="flex items-center">
+                  <Check size={16} className="text-teal-500 mr-2" />
+                  <span>Visa, Mastercard, Amex, e-Transfer</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Call to Action */}
+      <section className="py-12 md:py-16 bg-teal-600 text-white">
+        <div className="container mx-auto px-4 md:px-6 text-center">
+          <h2 className="text-2xl md:text-3xl font-bold mb-6">Ready to Start Your Journey Towards Healing?</h2>
+          <p className="text-lg mb-8 max-w-2xl mx-auto">
+            I offer a free 15-minute consultation to see if we are a good fit. Contact me today to schedule an appointment and learn more about how I can support you.
+          </p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <a 
+              href="tel:2894023685" 
+              className="bg-white text-teal-600 hover:bg-teal-100 px-6 py-3 rounded-lg font-medium flex items-center justify-center transition-colors"
+            >
+              <Phone size={18} className="mr-2" /> Call (289) 402-3685
+            </a>
+            <a 
+              href="#contact" 
+              className="bg-teal-700 hover:bg-teal-800 text-white px-6 py-3 rounded-lg font-medium flex items-center justify-center transition-colors"
+            >
+              <Mail size={18} className="mr-2" /> Send Email
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Languages */}
+      <section className="py-8 bg-teal-50">
+        <div className="container mx-auto px-4 md:px-6 text-center">
+          <p className="text-gray-700">
+            <span className="font-medium">Languages:</span> English, Shona
+          </p>
+        </div>
+      </section>
+    </div>
+  );
+}
 
 export default AboutPage;
-
