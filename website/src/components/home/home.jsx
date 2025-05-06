@@ -82,8 +82,7 @@ function HomePage() {
               It starts with <span className="text-teal-600">you.</span>
             </h1>
             <p className="text-lg mb-8 text-gray-600">
-              Therapy to help you feel whole, build deeper connections and live
-              with more meaning.
+              Fostering Your Path to Mind-Body Harmony
             </p>
 
             <div className="space-y-4 mb-8">
@@ -105,13 +104,13 @@ function HomePage() {
 
             <div className="space-y-4">
               <a
-                href="tel:2894023685"
+                href="tel:647 835 4998"
                 className="w-full bg-teal-600 text-white hover:bg-teal-700 font-medium py-3 px-6 rounded-md transition-colors flex items-center justify-center shadow-lg"
               >
                 <span>Book A Free Consultation</span>
               </a>
               <a
-                href="tel:2894023685"
+                href="tel:647 835 4998"
                 className="w-full bg-white text-teal-600 border-2 border-teal-600 hover:bg-teal-50 font-medium py-3 px-6 rounded-md transition-colors flex items-center justify-center"
               >
                 <Phone className="mr-2" size={18} />
@@ -155,13 +154,13 @@ function HomePage() {
 
                 <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
                   <a
-                    href="tel:2894023685"
+                    href="tel:647 835 4998"
                     className="bg-teal-600 text-white hover:bg-teal-700 font-medium py-3 px-6 rounded-md transition-colors flex items-center justify-center shadow-lg"
                   >
                     <span>Book A Free Consultation</span>
                   </a>
                   <a
-                    href="tel:2894023685"
+                    href="tel:647 835 4998"
                     className="bg-white text-teal-600 border-2 border-teal-600 hover:bg-teal-50 font-medium py-3 px-6 rounded-md transition-colors flex items-center justify-center"
                   >
                     <Phone className="mr-2" size={18} />
@@ -301,7 +300,7 @@ function HomePage() {
               </p>
 
               <a
-                href="tel:2894023685"
+                href="tel:647 835 4998"
                 className="bg-teal-600 text-white hover:bg-teal-700 font-medium py-3 px-6 rounded-md transition-colors inline-flex items-center shadow-lg"
               >
                 <Phone className="mr-2" size={18} />
@@ -552,11 +551,11 @@ function HomePage() {
           </p>
           <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
             <a
-              href="tel:2894023685"
+              href="tel:647 835 4998"
               className="bg-white text-teal-600 hover:bg-cyan-50 font-medium py-3 px-8 rounded-md transition-colors inline-flex items-center justify-center shadow-md"
             >
               <Phone size={18} className="mr-2" />
-              <span>(289) 402-3685</span>
+              <span>647 835 4998</span>
             </a>
             <a
               href="mailto:lilian@example.com"
@@ -777,7 +776,7 @@ function HomePage() {
                   <Phone className="text-teal-600 mt-1 mr-4" size={20} />
                   <div>
                     <h3 className="font-medium text-gray-800 mb-1">Phone</h3>
-                    <p className="text-gray-600">(289) 402-3685</p>
+                    <p className="text-gray-600">647 835 4998</p>
                   </div>
                 </div>
 
@@ -1006,7 +1005,7 @@ function HomePage() {
               </p>
               <div className="flex items-center text-gray-300">
                 <Phone size={16} className="mr-2" />
-                <span>(289) 402-3685</span>
+                <span>647 835 4998</span>
               </div>
             </div>
 
