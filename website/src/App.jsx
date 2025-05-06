@@ -8,6 +8,7 @@ import ServicesPage from './components/services/services';
 import AboutPage from './components/about/about';
 import HomePage from './components/home/home';
 import TherapistsPage from './components/therapy/therapy';
+import FAQPage from './components/faq/faq';
 
 import { useEffect } from 'react';
 
@@ -36,6 +37,7 @@ function App() {
             <Route path="/resources" element={<ResourcesPage />} />
             <Route path="/therapists" element={<TherapistsPage />} />
             <Route path="/about" element={<AboutPage />} />
+            <Route path="/faq" element={<FAQPage />} />
           </Routes>
         </AnimatePresence>
         {/*<Footer />*/}
