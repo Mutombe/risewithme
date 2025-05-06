@@ -558,7 +558,7 @@ function HomePage() {
               <span>647 835 4998</span>
             </a>
             <a
-              href="mailto:lilian@example.com"
+              href="mailto:info@raphaelapsychotherapy.ca"
               className="bg-transparent border-2 border-white hover:bg-white hover:text-teal-600 font-medium py-3 px-8 rounded-md transition-colors inline-flex items-center justify-center"
             >
               <Mail size={18} className="mr-2" />
@@ -619,7 +619,7 @@ function HomePage() {
             <div className="order-1 lg:order-2 relative">
               <div className="rounded-2xl overflow-hidden shadow-xl">
                 <img
-                  src="/therapy-session.jpg"
+                  src="/home.jpg"
                   alt="Therapy session"
                   className="w-full h-full object-cover"
                 />
@@ -784,7 +784,7 @@ function HomePage() {
                   <Mail className="text-teal-600 mt-1 mr-4" size={20} />
                   <div>
                     <h3 className="font-medium text-gray-800 mb-1">Email</h3>
-                    <p className="text-gray-600">lilian@example.com</p>
+                    <p className="text-gray-600">info@raphaelapsychotherapy.ca</p>
                   </div>
                 </div>
 
