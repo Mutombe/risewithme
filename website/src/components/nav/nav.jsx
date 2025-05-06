@@ -188,13 +188,7 @@ function Navbar() {
             />
             
             {/* Therapists Dropdown */}
-            <DropdownMenu 
-              title="Therapists" 
-              items={therapistsDropdown} 
-              isActive={currentPage.startsWith('therapists')}
-              currentPage={currentPage}
-              setCurrentPage={setCurrentPage}
-            />
+
             
             <Link
               to="/contact"

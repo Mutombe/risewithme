@@ -174,7 +174,7 @@ function HomePage() {
               <div className="lg:col-span-7 relative">
                 <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                   <img
-                    src="/lilian.jpeg"
+                    src="/home.jpg"
                     alt="Lilian Shonhiwa, Registered Psychotherapist"
                     className="w-full object-cover h-[500px]"
                   />
