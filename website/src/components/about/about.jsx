@@ -20,10 +20,10 @@ function AboutPage() {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a 
-                href="tel:2894023685" 
+                href="tel:647 835 4998" 
                 className="bg-white bg-opacity-20 hover:bg-opacity-30 text-teal-700 px-4 py-2 rounded-lg flex items-center transition-all"
               >
-                <Phone size={18} className="mr-2" /> (289) 402-3685
+                <Phone size={18} className="mr-2" /> 647 835 4998
               </a>
               <a 
                 href="#contact" 
@@ -295,10 +295,10 @@ function AboutPage() {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a 
-              href="tel:2894023685" 
+              href="tel:647 835 4998" 
               className="bg-white text-teal-600 hover:bg-teal-100 px-6 py-3 rounded-lg font-medium flex items-center justify-center transition-colors"
             >
-              <Phone size={18} className="mr-2" /> Call (289) 402-3685
+              <Phone size={18} className="mr-2" /> Call 647 835 4998
             </a>
             <a 
               href="#contact" 
