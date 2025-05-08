@@ -20,6 +20,13 @@ import {
   Brain,
   Shield,
   Sparkles,
+  User,
+  Baby,
+  PersonStanding,
+  ChevronDown,
+  ChevronUp,
+  CheckCircle,
+  Check,
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
@@ -327,22 +334,40 @@ function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
-                icon: <Heart size={32} className="text-teal-600" />,
+                icon: <User className="text-teal-600" size={32} />,
                 title: "Individual Therapy",
                 description:
-                  "Personalized one-on-one sessions addressing your specific concerns and goals for growth.",
+                  "One-on-one sessions focused on personal healing, growth, and development. Explore challenges and build strategies for positive change.",
               },
               {
-                icon: <Users size={32} className="text-teal-600" />,
-                title: "Couples & Family Therapy",
+                icon: <Heart className="text-teal-600" size={32} />,
+                title: "Couples Therapy",
                 description:
-                  "Rebuild connections and develop healthier communication patterns with loved ones.",
+                  "Rebuild trust, navigate conflicts, and deepen bonds through compassionate communication. Reignite intimacy and strengthen partnership.",
               },
               {
-                icon: <Sparkles size={32} className="text-teal-600" />,
-                title: "Specialized Programs",
+                icon: <Users className="text-teal-600" size={32} />,
+                title: "Family Therapy",
                 description:
-                  "Targeted approaches for anxiety, depression, trauma, and other specific mental health needs.",
+                  "Strengthen communication, resolve conflicts, and foster understanding to rebuild family harmony and connection.",
+              },
+              {
+                icon: <User className="text-teal-600" size={32} />,
+                title: "Seniors Therapy",
+                description:
+                  "Compassionate support for life transitions, grief, and health challenges using reminiscence therapy and mindfulness.",
+              },
+              {
+                icon: <Baby className="text-teal-600" size={32} />,
+                title: "Child Therapy",
+                description:
+                  "Play-based therapy helping kids navigate emotions and build confidence through creative expression.",
+              },
+              {
+                icon: <PersonStanding className="text-teal-600" size={32} />,
+                title: "Teen Therapy",
+                description:
+                  "Safe space for teens to navigate social stress and anxiety using mindfulness and creative expression.",
               },
             ].map((feature, index) => (
               <div
@@ -379,31 +404,22 @@ function HomePage() {
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {[
-              "Anxiety",
-              "Depression",
               "Trauma and PTSD",
-              "Addiction",
-              "ADHD",
-              "Alcohol Use",
-              "Anger Management",
-              "Behavioural Issues",
-              "Borderline Personality (BPD)",
-              "Caregivers",
-              "Coping Skills",
-              "Dissociative Disorders (DID)",
-              "Divorce",
-              "Domestic Abuse",
-              "Domestic Violence",
-              "Eating Disorders",
-              "Emotional Disturbance",
-              "Family Conflict",
-              "Geriatric and Seniors",
-              "Grief",
-              "Infidelity",
-              "Life Coaching",
-              "Life Transitions",
-              "Parenting",
+              "Anxiety and Depression",
+              "Domestic Violence Support",
+              "Sexual Assault Recovery",
               "Self Esteem",
+              "Anger Management",
+              "Life Transitions",
+              "Grief",
+              "Pre/Post Natal",
+              "Parenting Support",
+              "Addiction",
+              "BPD",
+              "Childhood Trauma",
+              "Body Dysmorphia",
+              "Neurodiversity",
+              "Seniors Care",
             ].map((specialty, index) => (
               <div
                 key={index}
@@ -487,46 +503,18 @@ function HomePage() {
       </section>
 
       {/* Endorsements Section */}
+      {/* Endorsements Section */}
       <section className="py-16 md:py-20 bg-white">
         <div className="container mx-auto px-4 md:px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-              Professional Endorsements
-            </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              What colleagues in the field have to say about my therapeutic
-              approach.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-1 gap-8 max-w-4xl mx-auto">
             <div className="bg-teal-50 p-6 rounded-xl shadow-sm">
               <p className="text-gray-700 mb-4 italic">
-                "Lilian is an extremely insightful and analytical clinician who
-                puts her whole self in finding the right path for her clients,
-                walking with them every step of the way. Her light touch of
-                humor and warm presence allows her to connect easily with
-                anyone."
+                "Lilian is an extremely insightful clinician..."
               </p>
               <div>
                 <p className="font-semibold text-teal-600">Bavly Kost</p>
                 <p className="text-sm text-gray-500">
                   Registered Psychotherapist, BEd, MA, MPS, RP, OCT
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-teal-50 p-6 rounded-xl shadow-sm">
-              <p className="text-gray-700 mb-4 italic">
-                "Lilian brings a unique blend of professional expertise and
-                genuine compassion to her practice. Her ability to create a safe
-                and supportive environment allows clients to explore their
-                challenges and find meaningful paths to healing."
-              </p>
-              <div>
-                <p className="font-semibold text-teal-600">Karen Rezk</p>
-                <p className="text-sm text-gray-500">
-                  Registered Psychotherapist (Qualifying), RPQ, MDiv, MScA, RN
                 </p>
               </div>
             </div>
@@ -675,13 +663,17 @@ function HomePage() {
                 </h3>
               </div>
               <p className="text-gray-600 mb-2">
+                <span className="font-medium">Hamilton:</span> Virtual &
+                In-Person
+              </p>
+              <p className="text-gray-600 mb-2">
                 <span className="font-medium">Grimsby:</span> ON L3M
               </p>
               <p className="text-gray-600">
                 <span className="font-medium">Burlington:</span> ON L7T
               </p>
-              <p className="text-gray-600 mt-4">
-                Serving Hamilton and surrounding areas.
+              <p className="text-gray-600 mt-4 text-sm">
+                Virtual sessions available across Ontario & BC
               </p>
             </div>
 
@@ -692,14 +684,19 @@ function HomePage() {
               </div>
               <div className="space-y-2">
                 <p className="text-gray-700">
-                  <span className="font-medium">Individual:</span> $100/session
+                  <span className="font-medium">Individual:</span> $160/session
                 </p>
                 <p className="text-gray-700">
-                  <span className="font-medium">Couples:</span> $120/session
+                  <span className="font-medium">Couples:</span> $175/session
+                </p>
+                <p className="text-gray-700">
+                  <span className="font-medium">Family:</span> $190/session
                 </p>
                 <p className="text-gray-600 mt-4 text-sm">
-                  Insurance receipts provided. Sliding scale available for
-                  eligible clients.
+                  Sliding scale available -{" "}
+                  <a href="/sliding-scale" className="text-teal-600 underline">
+                    Learn more
+                  </a>
                 </p>
               </div>
             </div>
@@ -784,7 +781,9 @@ function HomePage() {
                   <Mail className="text-teal-600 mt-1 mr-4" size={20} />
                   <div>
                     <h3 className="font-medium text-gray-800 mb-1">Email</h3>
-                    <p className="text-gray-600">info@raphaelapsychotherapy.ca</p>
+                    <p className="text-gray-600">
+                      info@raphaelapsychotherapy.ca
+                    </p>
                   </div>
                 </div>
 
