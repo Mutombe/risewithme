@@ -4,13 +4,13 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import { motion, AnimatePresence } from 'framer-motion';
 import Navbar from './components/nav/nav';
 import ResourcesPage from './components/resource';
-import ServicesPage from './components/services/services';
 import AboutPage from './components/about/about';
 import HomePage from './components/home/home';
 import TherapistsPage from './components/therapy/therapy';
 import FAQPage from './components/faq/faq';
 
 import { useEffect } from 'react';
+import Services from './components/services/services';
 
 
 const ScrollToTop = () => {
@@ -33,7 +33,7 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/home" element={<HomePage />} />
-            <Route path="/services" element={<ServicesPage />} />
+            <Route path="/services" element={<Services />} />
             <Route path="/resources" element={<ResourcesPage />} />
             <Route path="/therapists" element={<TherapistsPage />} />
             <Route path="/about" element={<AboutPage />} />

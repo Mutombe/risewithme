@@ -5,135 +5,219 @@ import {
   Shield, Star, Check, Home, Briefcase, Smile, Brain, ShieldPlus, Scale,
   Baby, HandHeart, Sparkles
 } from 'lucide-react';
+import { useState } from 'react';
+import { motion } from 'framer-motion';
 
-function ServicesPage() {
-  return (
-    <div className="font-sans">
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-teal-600 to-teal-500 py-16 md:py-24 pt-24">
-        <div className="container mx-auto px-4 md:px-6 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-3xl md:text-5xl font-bold text-white mb-4">Therapy Services</h1>
-            <p className="text-lg md:text-xl text-white opacity-90 mb-6">
-              Compassionate, evidence-based care for individuals, couples, families, and seniors
-            </p>
-            <div className="flex flex-wrap justify-center gap-4">
-              <a href="tel:6478354998" className="bg-white bg-opacity-20 hover:bg-opacity-30 text-teal-700 px-6 py-3 rounded-lg flex items-center transition-all">
-                <Phone size={18} className="mr-2" /> 647-835-4998
-              </a>
-            </div>
+export default function Services() {
+
+const [hoveredService, setHoveredService] = useState(null);
+const [hoveredSpecialty, setHoveredSpecialty] = useState(null);
+
+// Main services data
+const services = [
+{
+icon: <Users className="text-teal-600" size={32} />,
+title: "Individual Therapy",
+content: "One-on-one sessions focused on your personal healing, growth, and development. Together we will explore your challenges and build strategies for positive change.",
+backgroundImage: "/ind.jpg"
+},
+{
+icon: <Heart className="text-teal-600" size={32} />,
+title: "Couples Therapy",
+content: "Rediscover the joy of connection. We guide couples in rebuilding trust, navigating conflicts with clarity, and deepening their bond through compassionate communication.",
+backgroundImage: "/coup.jpg"
+},
+{
+icon: <Home className="text-teal-600" size={32} />,
+title: "Family Therapy",
+content: "Every family deserves harmony. Let's navigate challenges together by strengthening communication, resolving conflicts with compassion, and fostering understanding.",
+backgroundImage: "/family.jpg"
+},
+{
+icon: <Sparkles className="text-teal-600" size={32} />,
+title: "Seniors Therapy",
+content: "Compassionate support for seniors navigating life transitions, grief, or health challenges. We honor your wisdom and craft a chapter filled with dignity and hope.",
+backgroundImage: "/senior.jpg"
+},
+{
+icon: <Baby className="text-teal-600" size={32} />,
+title: "Child Therapy",
+content: "Play-based therapy helping kids navigate big emotions through creative activities. We create a safe space to build confidence and healthy coping skills.",
+backgroundImage: "/child.png"
+},
+{
+icon: <Smile className="text-teal-600" size={32} />,
+title: "Teen Therapy",
+content: "Safe space for teens to navigate social stress and anxiety using mindfulness and creative expression. No lectures - just real talk and practical tools.",
+backgroundImage: "/teen.webp"
+}
+];
+
+// Specialized support data
+const specialties = [
+{
+icon: <ShieldPlus className="text-teal-600" size={28} />,
+title: "Trauma & PTSD",
+content: "EMDR and evidence-based approaches to process pain and build lasting resilience. Heal and thrive, not just survive.",
+backgroundImage: "/ptsd.jpg"
+},
+{
+icon: <Brain className="text-teal-600" size={28} />,
+title: "Anxiety & Depression",
+content: "Science-backed strategies to manage symptoms, reframe patterns, and cultivate joy. Reclaim your life with practical tools.",
+backgroundImage: "/axi.jpg"
+},
+{
+icon: <Shield className="text-teal-600" size={28} />,
+title: "Domestic Violence Support",
+content: "Trauma-informed care for survivors focusing on safety planning and emotional recovery. Reclaim your voice and strength.",
+backgroundImage: "/dom.png"
+},
+{
+icon: <Star className="text-teal-600" size={28} />,
+title: "Self Esteem",
+content: "Nurture unshakable confidence by challenging limiting beliefs and celebrating your strengths. Live authentically and unapologetically.",
+backgroundImage: "/confidence.jpg"
+},
+{
+icon: <Scale className="text-teal-600" size={28} />,
+title: "Life Transitions",
+content: "Navigate career changes, relocation, or parenthood with resilience. Turn transitions into growth opportunities.",
+backgroundImage: "/life.jpg"
+},
+{
+icon: <HandHeart className="text-teal-600" size={28} />,
+title: "Grief Support",
+content: "Compassionate space to process loss and rediscover hope. Honor memories while rebuilding meaning.",
+backgroundImage: "/grief.jpg"
+},
+{
+icon: <Baby className="text-teal-600" size={28} />,
+title: "Pre/Post Natal Support",
+content: "Navigate pregnancy and postpartum challenges with trauma-informed care. Reconnect with hope and confidence.",
+backgroundImage: "/prena.jpg"
+},
+{
+icon: <Heart className="text-teal-600" size={28} />,
+title: "Parenting Support",
+content: "Create calm in the chaos of parenting. Evidence-based strategies for tantrums, sibling dynamics, and building connection.",
+backgroundImage: "/pare.webp"
+}
+];
+
+return (
+<div>
+{/* Hero Section with Background Image */}
+<section className="relative pt-24 py-16 md:py-24">
+  {/* Background Image */}
+  <div className="absolute inset-0 w-full h-full z-0">
+    <img 
+      src="/hero.jpg" 
+      alt="Therapy Background" 
+      className="w-full h-full object-cover"
+    />
+    {/* Overlay with gradient */}
+    <div className="absolute inset-0 bg-gradient-to-r from-teal-600 to-teal-500 opacity-90"></div>
+  </div>
+  
+  <div className="container mx-auto px-4 md:px-6 relative z-10">
+    <div className="max-w-4xl mx-auto text-center">
+      <h1 className="text-3xl md:text-5xl font-bold text-white mb-4">Therapy Services</h1>
+      <p className="text-lg md:text-xl text-white opacity-90 mb-6">
+        Compassionate, evidence-based care for individuals, couples, families, and seniors
+      </p>
+      <div className="flex flex-wrap justify-center gap-4">
+        <a href="tel:6478354998" className="bg-white bg-opacity-20 hover:bg-opacity-30 text-teal-700 px-6 py-3 rounded-lg flex items-center transition-all">
+          <Phone size={18} className="mr-2" /> 647-835-4998
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{/* Main Services */}
+<section className="py-12 md:py-20 bg-white">
+  <div className="container mx-auto px-4 md:px-6">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {services.map((service, index) => (
+        <div 
+          key={index} 
+          className="relative overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-all border border-gray-100 h-full"
+          onMouseEnter={() => setHoveredService(index)}
+          onMouseLeave={() => setHoveredService(null)}
+        >
+          {/* Background Image */}
+          <div className="absolute inset-0 w-full h-full">
+            <img 
+              src={service.backgroundImage} 
+              alt={service.title} 
+              className="w-full h-full object-cover opacity-90 transition-opacity duration-300"
+            />
           </div>
-        </div>
-      </section>
-
-      {/* Main Services */}
-      <section className="py-12 md:py-20 bg-white">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                icon: <Users className="text-teal-600" size={32} />,
-                title: "Individual Therapy",
-                content: "One-on-one sessions focused on your personal healing, growth, and development. Together we will explore your challenges and build strategies for positive change."
-              },
-              {
-                icon: <Heart className="text-teal-600" size={32} />,
-                title: "Couples Therapy",
-                content: "Rediscover the joy of connection. We guide couples in rebuilding trust, navigating conflicts with clarity, and deepening their bond through compassionate communication."
-              },
-              {
-                icon: <Home className="text-teal-600" size={32} />,
-                title: "Family Therapy",
-                content: "Every family deserves harmony. Let's navigate challenges together by strengthening communication, resolving conflicts with compassion, and fostering understanding."
-              },
-              {
-                icon: <Sparkles className="text-teal-600" size={32} />,
-                title: "Seniors Therapy",
-                content: "Compassionate support for seniors navigating life transitions, grief, or health challenges. We honor your wisdom and craft a chapter filled with dignity and hope."
-              },
-              {
-                icon: <Baby className="text-teal-600" size={32} />,
-                title: "Child Therapy",
-                content: "Play-based therapy helping kids navigate big emotions through creative activities. We create a safe space to build confidence and healthy coping skills."
-              },
-              {
-                icon: <Smile className="text-teal-600" size={32} />,
-                title: "Teen Therapy",
-                content: "Safe space for teens to navigate social stress and anxiety using mindfulness and creative expression. No lectures - just real talk and practical tools."
-              }
-            ].map((service, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all border border-gray-100">
-                <div className="mb-4 text-teal-600">{service.icon}</div>
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">{service.title}</h3>
-                <p className="text-gray-600">{service.content}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Specialized Support Section */}
-      <section className="py-12 md:py-20 bg-teal-50">
-        <div className="container mx-auto px-4 md:px-6">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8 text-center">
-            Specialized Support Areas
-          </h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[
-              {
-                icon: <ShieldPlus className="text-teal-600" size={28} />,
-                title: "Trauma & PTSD",
-                content: "EMDR and evidence-based approaches to process pain and build lasting resilience. Heal and thrive, not just survive."
-              },
-              {
-                icon: <Brain className="text-teal-600" size={28} />,
-                title: "Anxiety & Depression",
-                content: "Science-backed strategies to manage symptoms, reframe patterns, and cultivate joy. Reclaim your life with practical tools."
-              },
-              {
-                icon: <Shield className="text-teal-600" size={28} />,
-                title: "Domestic Violence Support",
-                content: "Trauma-informed care for survivors focusing on safety planning and emotional recovery. Reclaim your voice and strength."
-              },
-              {
-                icon: <Star className="text-teal-600" size={28} />,
-                title: "Self Esteem",
-                content: "Nurture unshakable confidence by challenging limiting beliefs and celebrating your strengths. Live authentically and unapologetically."
-              },
-              {
-                icon: <Scale className="text-teal-600" size={28} />,
-                title: "Life Transitions",
-                content: "Navigate career changes, relocation, or parenthood with resilience. Turn transitions into growth opportunities."
-              },
-              {
-                icon: <HandHeart className="text-teal-600" size={28} />,
-                title: "Grief Support",
-                content: "Compassionate space to process loss and rediscover hope. Honor memories while rebuilding meaning."
-              },
-              {
-                icon: <Baby className="text-teal-600" size={28} />,
-                title: "Pre/Post Natal Support",
-                content: "Navigate pregnancy and postpartum challenges with trauma-informed care. Reconnect with hope and confidence."
-              },
-              {
-                icon: <Heart className="text-teal-600" size={28} />,
-                title: "Parenting Support",
-                content: "Create calm in the chaos of parenting. Evidence-based strategies for tantrums, sibling dynamics, and building connection."
-              }
-            ].map((service, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-sm">
-                <div className="mb-3 text-teal-600">{service.icon}</div>
-                <h3 className="text-lg font-semibold text-gray-800 mb-2">{service.title}</h3>
-                <p className="text-gray-600">{service.content}</p>
-              </div>
-            ))}
+          {/* Content with semi-transparent white overlay for readability */}
+          <div className="absolute inset-0 bg-white opacity-90"></div>
+          
+          {/* Service content */}
+          <div className="relative p-6 z-10">
+            <div className="mb-4 text-teal-600">{service.icon}</div>
+            <h3 className="text-xl font-semibold text-gray-800 mb-3">{service.title}</h3>
+            <p className="text-gray-600">{service.content}</p>
           </div>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
 
-      {/* Approaches & Fees */}
-      <section className="py-12 md:py-20 bg-white">
+{/* Specialized Support Section */}
+<section className="py-12 md:py-20 bg-teal-50 relative">
+  {/* Background pattern for the section */}
+  <div className="absolute inset-0 w-full h-full z-0">
+    <img 
+      src="/life.jpg" 
+      alt="Section Background" 
+      className="w-full h-full object-cover opacity-10"
+    />
+  </div>
+  
+  <div className="container mx-auto px-4 md:px-6 relative z-10">
+    <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8 text-center">
+      Specialized Support Areas
+    </h2>
+    
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {specialties.map((specialty, index) => (
+        <div 
+          key={index} 
+          className="relative overflow-hidden bg-white rounded-lg shadow-sm"
+          onMouseEnter={() => setHoveredSpecialty(index)}
+          onMouseLeave={() => setHoveredSpecialty(null)}
+        >
+          {/* Background Image */}
+          <div className="absolute inset-0 w-full h-full">
+            <img 
+              src={specialty.backgroundImage} 
+              alt={specialty.title} 
+              className="w-full h-full object-cover opacity-90 transition-opacity duration-300"
+            />
+          </div>
+          
+          {/* Content with semi-transparent white overlay */}
+          <div className="absolute inset-0 bg-white opacity-85"></div>
+          
+          {/* Specialty content */}
+          <div className="relative p-6 z-10">
+            <div className="mb-3 text-teal-600">{specialty.icon}</div>
+            <h3 className="text-lg font-semibold text-gray-800 mb-2">{specialty.title}</h3>
+            <p className="text-gray-600">{specialty.content}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    {/* Approaches & Fees */}
+    <section className="py-12 md:py-20 bg-white">
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Therapeutic Approaches */}
@@ -220,8 +304,8 @@ function ServicesPage() {
           </div>
         </div>
       </section>
-    </div>
-  );
+  </div>
+</section>
+</div>
+);
 }
-
-export default ServicesPage;

@@ -33,6 +33,101 @@ import { Link } from "react-router-dom";
 import { Toaster, toast } from "sonner";
 import { Globe } from "lucide-react";
 
+function ServicesSection() {
+  const [hovered, setHovered] = useState(null);
+  
+  const services = [
+    {
+      icon: <User className="text-teal-600" size={32} />,
+      title: "Individual Therapy",
+      description: "One-on-one sessions focused on personal healing, growth, and development. Explore challenges and build strategies for positive change.",
+      backgroundImage: "/ind.jpg"
+    },
+    {
+      icon: <Heart className="text-teal-600" size={32} />,
+      title: "Couples Therapy",
+      description: "Rebuild trust, navigate conflicts, and deepen bonds through compassionate communication. Reignite intimacy and strengthen partnership.",
+      backgroundImage: "/coup.jpg"
+    },
+    {
+      icon: <Users className="text-teal-600" size={32} />,
+      title: "Family Therapy",
+      description: "Strengthen communication, resolve conflicts, and foster understanding to rebuild family harmony and connection.",
+      backgroundImage: "/family.jpg"
+    },
+    {
+      icon: <User className="text-teal-600" size={32} />,
+      title: "Seniors Therapy",
+      description: "Compassionate support for life transitions, grief, and health challenges using reminiscence therapy and mindfulness.",
+      backgroundImage: "/senior.jpg"
+    },
+    {
+      icon: <Baby className="text-teal-600" size={32} />,
+      title: "Child Therapy",
+      description: "Play-based therapy helping kids navigate emotions and build confidence through creative expression.",
+      backgroundImage: "/child.png"
+    },
+    {
+      icon: <PersonStanding className="text-teal-600" size={32} />,
+      title: "Teen Therapy",
+      description: "Safe space for teens to navigate social stress and anxiety using mindfulness and creative expression.",
+      backgroundImage: "/teen.webp"
+    }
+  ];
+
+  return (
+    <section className="py-20 md:py-24">
+      <div className="container mx-auto px-4 md:px-6">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            How I Can Help
+          </h2>
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            Professional psychotherapy services tailored to your unique journey for healing, growth, and lasting well-being.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {services.map((service, index) => (
+            <div 
+              key={index} 
+              className="relative overflow-hidden rounded-xl shadow-md hover:shadow-lg transition-shadow border border-gray-100 h-64 group"
+              onMouseEnter={() => setHovered(index)}
+              onMouseLeave={() => setHovered(null)}
+            >
+              {/* Background Image */}
+              <div className="absolute inset-0 w-full h-full">
+                <img 
+                  src={service.backgroundImage} 
+                  alt={service.title} 
+                  className="w-full h-full object-cover opacity-60 group-hover:opacity-30 transition-opacity duration-300"
+                />
+              </div>
+              
+              {/* Gradient Overlay */}
+              <div className="absolute inset-0 bg-gradient-to-b from-white via-white/80 to-white/70"></div>
+              
+              {/* Content */}
+              <div className="relative p-8 h-full flex flex-col justify-between z-10 pb-12">
+                <div>
+                  <div className="mb-4">{service.icon}</div>
+                  <h3 className="text-xl font-semibold mb-3 text-gray-800">
+                    {service.title}
+                  </h3>
+                  <p className="text-gray-600">{service.description}</p>
+                </div>
+                <button className="mt-6 text-teal-600 hover:text-teal-800 font-medium inline-flex items-center">
+                  <span>Learn more</span>
+                  <ChevronRight size={16} className="ml-1" />
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function HomePage() {
   // For testimonial carousel
   const [activeTestimonial, setActiveTestimonial] = useState(0);
@@ -319,75 +414,7 @@ function HomePage() {
       </section>
 
       {/* Services Section */}
-      <section className="py-20 md:py-24">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-              How I Can Help
-            </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Professional psychotherapy services tailored to your unique
-              journey for healing, growth, and lasting well-being.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              {
-                icon: <User className="text-teal-600" size={32} />,
-                title: "Individual Therapy",
-                description:
-                  "One-on-one sessions focused on personal healing, growth, and development. Explore challenges and build strategies for positive change.",
-              },
-              {
-                icon: <Heart className="text-teal-600" size={32} />,
-                title: "Couples Therapy",
-                description:
-                  "Rebuild trust, navigate conflicts, and deepen bonds through compassionate communication. Reignite intimacy and strengthen partnership.",
-              },
-              {
-                icon: <Users className="text-teal-600" size={32} />,
-                title: "Family Therapy",
-                description:
-                  "Strengthen communication, resolve conflicts, and foster understanding to rebuild family harmony and connection.",
-              },
-              {
-                icon: <User className="text-teal-600" size={32} />,
-                title: "Seniors Therapy",
-                description:
-                  "Compassionate support for life transitions, grief, and health challenges using reminiscence therapy and mindfulness.",
-              },
-              {
-                icon: <Baby className="text-teal-600" size={32} />,
-                title: "Child Therapy",
-                description:
-                  "Play-based therapy helping kids navigate emotions and build confidence through creative expression.",
-              },
-              {
-                icon: <PersonStanding className="text-teal-600" size={32} />,
-                title: "Teen Therapy",
-                description:
-                  "Safe space for teens to navigate social stress and anxiety using mindfulness and creative expression.",
-              },
-            ].map((feature, index) => (
-              <div
-                key={index}
-                className="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow border border-gray-100"
-              >
-                <div className="mb-4">{feature.icon}</div>
-                <h3 className="text-xl font-semibold mb-3 text-gray-800">
-                  {feature.title}
-                </h3>
-                <p className="text-gray-600">{feature.description}</p>
-                <button className="mt-6 text-teal-600 hover:text-teal-800 font-medium inline-flex items-center">
-                  <span>Learn more</span>
-                  <ChevronRight size={16} className="ml-1" />
-                </button>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <ServicesSection />
 
       {/* Specialties & Expertise Section */}
       <section className="py-16 md:py-20 bg-gray-50">
