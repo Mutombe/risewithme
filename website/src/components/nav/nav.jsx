@@ -6,12 +6,8 @@ import { Link, useLocation } from 'react-router-dom';
 // Logo Component with new turquoise color scheme
 const Logo = () => (
   <div className="flex items-center">
-    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M20 5C11.716 5 5 11.716 5 20C5 28.284 11.716 35 20 35C28.284 35 35 28.284 35 20C35 11.716 28.284 5 20 5Z" fill="#E0F7F5" />
-      <path d="M20 8C19.209 8 18.5 8.82 18.5 9.5C18.5 11.875 18.5 17.5 18.5 20C18.5 22.5 21 24.5 24 25.5C24.5 25.685 25 24.5 24.5 24C23 22.5 21.5 21 21.5 20C21.5 17.5 21.5 11.875 21.5 9.5C21.5 8.82 20.791 8 20 8Z" fill="#20B2AA" />
-      <path d="M20 8C19.209 8 18.5 8.82 18.5 9.5C18.5 11.875 18.5 17.5 18.5 20C18.5 22.5 16 24.5 13 25.5C12.5 25.685 12 24.5 12.5 24C14 22.5 15.5 21 15.5 20C15.5 17.5 15.5 11.875 15.5 9.5C15.5 8.82 16.209 8 17 8" fill="#20B2AA" />
-    </svg>
-    <span className="ml-3 text-xl font-semibold md:inline-block">
+    <img src="/rlogo.jpeg" alt="Logo" className="h-10 w-16" />
+    <span className=" text-xl font-semibold md:inline-block">
       <span className="text-teal-500">Raphaela</span>
       <span className="text-cyan-800"> Psychotherapy</span>
     </span>
