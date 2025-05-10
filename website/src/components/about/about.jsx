@@ -138,6 +138,7 @@ function AboutPage() {
       <section className="py-12 md:py-20">
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+            {/*}
             <div>
               <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">Qualifications & Experience</h2>
               <div className="space-y-4">
@@ -177,7 +178,7 @@ function AboutPage() {
                   </div>
                 </div>
               </div>
-            </div>
+            </div>*/}
 
             <div className="bg-teal-50 p-8 rounded-lg">
               <h3 className="text-xl font-semibold text-gray-800 mb-4">Supervisors</h3>
