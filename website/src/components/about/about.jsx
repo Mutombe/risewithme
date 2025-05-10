@@ -102,7 +102,7 @@ function AboutPage() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
-              Therapeutic Approach
+              Therapeutic Approaches
             </h2>
             <p className="text-gray-600 max-w-3xl mx-auto">
             </p>
