@@ -380,7 +380,7 @@ function HomePage() {
               <div className="absolute -bottom-6 -right-6 bg-teal-500 text-white p-6 rounded-xl shadow-lg max-w-xs">
                 <h3 className="text-xl font-semibold mb-2">Lilian Shonhiwa</h3>
                 <p className="text-sm opacity-90">
-                  Registered Psychotherapist (Qualifying), MACP, MBA, BBA, SSW
+                  Registered Psychotherapist (Qualifying), MA Counseling Psychology, MBA, BBA, SSW
                 </p>
               </div>
             </div>
