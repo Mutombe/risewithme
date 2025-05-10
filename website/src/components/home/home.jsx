@@ -603,7 +603,7 @@ function HomePage() {
             {/* Left side - Image */}
             <div className="order-2 lg:order-1">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-                My Therapeutic Approach
+                Our Therapeutic Approach
               </h2>
               <p className="text-lg text-gray-600 mb-6">
                 "I work with individuals navigating depression or trauma, often
