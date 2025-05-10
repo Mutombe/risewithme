@@ -32,47 +32,54 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Toaster, toast } from "sonner";
 import { Globe } from "lucide-react";
-
+import { useNavigate } from "react-router-dom";
 function ServicesSection() {
   const [hovered, setHovered] = useState(null);
-  
+  const navigate = useNavigate();
+
   const services = [
     {
       icon: <User className="text-teal-600" size={32} />,
       title: "Individual Therapy",
-      description: "One-on-one sessions focused on personal healing, growth, and development. Explore challenges and build strategies for positive change.",
-      backgroundImage: "/ind.jpg"
+      description:
+        "One-on-one sessions focused on personal healing, growth, and development. Explore challenges and build strategies for positive change.",
+      backgroundImage: "/ind.jpg",
     },
     {
       icon: <Heart className="text-teal-600" size={32} />,
       title: "Couples Therapy",
-      description: "Rebuild trust, navigate conflicts, and deepen bonds through compassionate communication. Reignite intimacy and strengthen partnership.",
-      backgroundImage: "/coup.jpg"
+      description:
+        "Rebuild trust, navigate conflicts, and deepen bonds through compassionate communication. Reignite intimacy and strengthen partnership.",
+      backgroundImage: "/coup.jpg",
     },
     {
       icon: <Users className="text-teal-600" size={32} />,
       title: "Family Therapy",
-      description: "Strengthen communication, resolve conflicts, and foster understanding to rebuild family harmony and connection.",
-      backgroundImage: "/family.jpg"
+      description:
+        "Strengthen communication, resolve conflicts, and foster understanding to rebuild family harmony and connection.",
+      backgroundImage: "/family.jpg",
     },
     {
       icon: <User className="text-teal-600" size={32} />,
       title: "Seniors Therapy",
-      description: "Compassionate support for life transitions, grief, and health challenges using reminiscence therapy and mindfulness.",
-      backgroundImage: "/senior.jpg"
+      description:
+        "Compassionate support for life transitions, grief, and health challenges using reminiscence therapy and mindfulness.",
+      backgroundImage: "/senior.jpg",
     },
     {
       icon: <Baby className="text-teal-600" size={32} />,
       title: "Child Therapy",
-      description: "Play-based therapy helping kids navigate emotions and build confidence through creative expression.",
-      backgroundImage: "/child.png"
+      description:
+        "Play-based therapy helping kids navigate emotions and build confidence through creative expression.",
+      backgroundImage: "/child.png",
     },
     {
       icon: <PersonStanding className="text-teal-600" size={32} />,
       title: "Teen Therapy",
-      description: "Safe space for teens to navigate social stress and anxiety using mindfulness and creative expression.",
-      backgroundImage: "/teen.webp"
-    }
+      description:
+        "Safe space for teens to navigate social stress and anxiety using mindfulness and creative expression.",
+      backgroundImage: "/teen.webp",
+    },
   ];
 
   return (
@@ -83,29 +90,30 @@ function ServicesSection() {
             How I Can Help
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Professional psychotherapy services tailored to your unique journey for healing, growth, and lasting well-being.
+            Professional psychotherapy services tailored to your unique journey
+            for healing, growth, and lasting well-being.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="relative overflow-hidden rounded-xl shadow-md hover:shadow-lg transition-shadow border border-gray-100 h-64 group"
               onMouseEnter={() => setHovered(index)}
               onMouseLeave={() => setHovered(null)}
             >
               {/* Background Image */}
               <div className="absolute inset-0 w-full h-full">
-                <img 
-                  src={service.backgroundImage} 
-                  alt={service.title} 
+                <img
+                  src={service.backgroundImage}
+                  alt={service.title}
                   className="w-full h-full object-cover opacity-60 group-hover:opacity-30 transition-opacity duration-300"
                 />
               </div>
-              
+
               {/* Gradient Overlay */}
               <div className="absolute inset-0 bg-gradient-to-b from-white via-white/80 to-white/70"></div>
-              
+
               {/* Content */}
               <div className="relative p-8 h-full flex flex-col justify-between z-10 pb-12">
                 <div>
@@ -115,7 +123,10 @@ function ServicesSection() {
                   </h3>
                   <p className="text-gray-600">{service.description}</p>
                 </div>
-                <button className="mt-6 text-teal-600 hover:text-teal-800 font-medium inline-flex items-center">
+                <button
+                  className="mt-6 text-teal-600 hover:text-teal-800 font-medium inline-flex items-center"
+                  onClick={() => navigate("/services")}
+                >
                   <span>Learn more</span>
                   <ChevronRight size={16} className="ml-1" />
                 </button>
@@ -178,7 +189,8 @@ function HomePage() {
           {/* Text content (mobile) */}
           <div className="container mx-auto px-4 py-10">
             <h4 className="text-teal-600 font-medium mb-2 uppercase tracking-wider text-sm">
-              PSYCHOTHERAPY IN GRIMSBY, BURLINGTON & SURROUNDING AREAS
+              PSYCHOTHERAPY IN GRIMSBY, <strong>HAMILTON</strong>, BURLINGTON &
+              SURROUNDING AREAS
             </h4>
             <h1 className="text-4xl sm:text-5xl font-bold mb-6 leading-tight text-gray-800">
               It starts with <span className="text-teal-600">you.</span>
@@ -229,10 +241,10 @@ function HomePage() {
               {/* Left content - Text */}
               <div className="lg:col-span-5 lg:pr-8">
                 <h4 className="text-teal-600 font-medium mb-2 uppercase tracking-wider">
-                  PSYCHOTHERAPY IN GRIMSBY, BURLINGTON & SURROUNDING AREAS
+                  PSYCHOTHERAPY IN GRIMSBY, <strong>HAMILTON</strong>, BURLINGTON & SURROUNDING AREAS
                 </h4>
                 <h1 className="text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 leading-tight text-gray-800">
-                Let the journey <span className="text-teal-600">begin.</span>
+                  Let the journey <span className="text-teal-600">begin.</span>
                 </h1>
                 <p className="text-lg xl:text-xl mb-8 text-gray-600 max-w-lg">
                   Therapy to help you feel whole, build deeper connections and
