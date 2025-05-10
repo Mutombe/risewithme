@@ -79,9 +79,9 @@ function AboutPage() {
       <section className="py-12 md:py-20 bg-gray-50">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center mb-12">
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">My Therapeutic Approach</h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">our Therapeutic Approach</h2>
             <p className="text-gray-600 max-w-3xl mx-auto">
-              I specialize in CBT, Trauma, EFT and Talk therapy to help you manage and collaboratively work on your healing. I am eager to help you navigate life issues and include life coaching if needed through Solution Focused Therapy.
+              We specialize in CBT, Trauma, EFT and Talk therapy to help you manage and collaboratively work on your healing. I am eager to help you navigate life issues and include life coaching if needed through Solution Focused Therapy.
             </p>
           </div>
 
@@ -90,12 +90,12 @@ function AboutPage() {
               {
                 icon: <Shield size={28} className="text-teal-500" />,
                 title: "CBT Therapy",
-                description: "I start with Cognitive Behavioral Therapy (CBT) because it provides a strong foundation for understanding how your thoughts influence your emotions and experiences."
+                description: "Cognitive Behavioral Therapy (CBT) because it provides a strong foundation for understanding how your thoughts influence your emotions and experiences."
               },
               {
                 icon: <Heart size={28} className="text-teal-500" />,
                 title: "Trauma-Focused Care",
-                description: "My approach to trauma is compassionate and client-centered, focusing on creating safety before processing difficult experiences."
+                description: "Trauma Focused Care because compassionate and client-centered, focusing on creating safety before processing difficult experiences."
               },
               {
                 icon: <MessageSquare size={28} className="text-teal-500" />,
@@ -115,7 +115,7 @@ function AboutPage() {
               {
                 icon: <BookOpen size={28} className="text-teal-500" />,
                 title: "Christian Counseling",
-                description: "I also offer Christian counseling for those who identify with Christianity, integrating faith perspectives when desired."
+                description: "Christian counseling for those who identify with Christianity, integrating faith perspectives when desired."
               }
             ].map((service, index) => (
               <div key={index} className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-all">
