@@ -1,10 +1,20 @@
-import React from 'react';
-import { 
-  Heart, Mail, Phone, MapPin, 
-  Calendar, Users, ArrowRight, 
-  Award, BookOpen, Shield, Star, 
-  MessageSquare, Check, Briefcase
-} from 'lucide-react';
+import React from "react";
+import {
+  Heart,
+  Mail,
+  Phone,
+  MapPin,
+  Calendar,
+  Users,
+  ArrowRight,
+  Award,
+  BookOpen,
+  Shield,
+  Star,
+  MessageSquare,
+  Check,
+  Briefcase,
+} from "lucide-react";
 
 function AboutPage() {
   return (
@@ -14,19 +24,22 @@ function AboutPage() {
         <div className="absolute inset-0 bg-black opacity-10"></div>
         <div className="container mx-auto px-4 md:px-6 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-3xl md:text-5xl font-bold text-white mb-4">About Lilian Shonhiwa</h1>
+            <h1 className="text-3xl md:text-5xl font-bold text-white mb-4">
+              About Lilian Shonhiwa
+            </h1>
             <p className="text-lg md:text-xl text-white opacity-90 mb-6">
-              Registered Psychotherapist (Qualifying), MA Counseling Psychology, MBA, BBA, SSW
+              Registered Psychotherapist (Qualifying), MA Counseling Psychology,
+              MBA, BBA, SSW
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <a 
-                href="tel:647 835 4998" 
+              <a
+                href="tel:647 835 4998"
                 className="bg-white bg-opacity-20 hover:bg-opacity-30 text-teal-700 px-4 py-2 rounded-lg flex items-center transition-all"
               >
                 <Phone size={18} className="mr-2" /> 647 835 4998
               </a>
-              <a 
-                href="#contact" 
+              <a
+                href="#contact"
                 className="bg-teal-500 hover:bg-teal-600 text-white px-4 py-2 rounded-lg flex items-center transition-all"
               >
                 <Mail size={18} className="mr-2" /> Contact Me
@@ -43,23 +56,39 @@ function AboutPage() {
             <div className="order-2 md:order-1">
               <div className="bg-teal-50 border-l-4 border-teal-500 p-4 mb-6">
                 <p className="italic text-gray-700">
-                  "I work with individuals navigating depression or trauma, often rooted in relationships or family dynamics. In our initial sessions, we'll take the time to understand what you're going through and begin building a personalized plan to help you heal and regain a sense of balance and control in your life. Many of my clients start to notice a shift within the first few weeks."
+                  "I work with individuals navigating depression or trauma,
+                  often rooted in relationships or family dynamics. In our
+                  initial sessions, we'll take the time to understand what
+                  you're going through and begin building a personalized plan to
+                  help you heal and regain a sense of balance and control in
+                  your life. Many of my clients start to notice a shift within
+                  the first few weeks."
                 </p>
               </div>
               <div className="flex flex-wrap gap-2 mb-6">
-                <span className="bg-teal-100 text-teal-800 px-3 py-1 rounded-full text-sm">Anxiety</span>
-                <span className="bg-teal-100 text-teal-800 px-3 py-1 rounded-full text-sm">Depression</span>
-                <span className="bg-teal-100 text-teal-800 px-3 py-1 rounded-full text-sm">Trauma</span>
-                <span className="bg-teal-100 text-teal-800 px-3 py-1 rounded-full text-sm">Domestic Violence</span>
-                <span className="bg-teal-100 text-teal-800 px-3 py-1 rounded-full text-sm">Relationships</span>
+                <span className="bg-teal-100 text-teal-800 px-3 py-1 rounded-full text-sm">
+                  Anxiety
+                </span>
+                <span className="bg-teal-100 text-teal-800 px-3 py-1 rounded-full text-sm">
+                  Depression
+                </span>
+                <span className="bg-teal-100 text-teal-800 px-3 py-1 rounded-full text-sm">
+                  Trauma
+                </span>
+                <span className="bg-teal-100 text-teal-800 px-3 py-1 rounded-full text-sm">
+                  Domestic Violence
+                </span>
+                <span className="bg-teal-100 text-teal-800 px-3 py-1 rounded-full text-sm">
+                  Relationships
+                </span>
               </div>
             </div>
             <div className="order-1 md:order-2 flex justify-center">
               <div className="relative">
                 <div className="absolute -top-4 -left-4 w-full h-full bg-teal-200 rounded-lg"></div>
-                <img 
-                  src="/lilian.jpeg" 
-                  alt="Lilian Shonhiwa" 
+                <img
+                  src="/lilian.jpeg"
+                  alt="Lilian Shonhiwa"
                   className="w-64 md:w-80 h-auto object-cover rounded-lg shadow-lg relative z-10"
                 />
               </div>
@@ -72,105 +101,127 @@ function AboutPage() {
       <section className="py-12 md:py-20 bg-gray-50">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center mb-12">
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">Our Therapeutic Approach</h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
+              Therapeutic Approach
+            </h2>
             <p className="text-gray-600 max-w-3xl mx-auto">
-              We specialize in CBT, Trauma, EFT and Talk therapy to help you manage and collaboratively work on your healing. I am eager to help you navigate life issues and include life coaching if needed through Solution Focused Therapy.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-                            {
-                              icon: <Check size={28} className="text-teal-500" />,
-                              title: "Psychodynamic Therapy",
-                              description: "Psychodynamic Therapy which focuses on unconscious patterns, attachment, and relational issues."
-                            },
-                            {
-                              icon: <Check size={28} className="text-teal-500" />,
-                              title: "Dialectical Behavior Therapy (DBT)",
-                              description: "Dialectical Behavior Therapy (DBT) which combines CBT with mindfulness; often used for emotion regulation and BPD."
-                            },
-                            {
-                              icon: <Check size={28} className="text-teal-500" />,
-                              title: "Rational Emotive Behavior Therapy (REBT)",
-                              description: "Rational Emotive Behavior Therapy (REBT) which focuses on identifying irrational beliefs and disputing them."
-                            },
-                            {
-                              icon: <Check size={28} className="text-teal-500" />,
-                              title: "Exposure Therapy",
-                              description: "Exposure Therapy in gradual exposure to feared stimuli for phobias and PTSD"
-                            },
-                            {
-                              icon: <Check size={28} className="text-teal-500" />,
-                              title: "Behavioral Activation",
-                              description: "Behavioral Activation which helps you to engage in activities that improve mood"
-                            },
-                            {
-                              icon: <Check size={28} className="text-teal-500" />,
-                              title: "Existential Therapy",
-                              description: "Existential Therapy, exploring meaning, freedom, and responsibility in one’s life."
-                            },
-                            {
-                              icon: <Check size={28} className="text-teal-500" />,
-                              title: "Family Systems Therapy",
-                              description: "Family Systems Therapy: Views issues within the context of family dynamics."
-                            },
-                            {
-                              icon: <Check size={28} className="text-teal-500" />,
-                              title: "Bowenian Family Therapy",
-                              description: "Bowenian Family Therapy: focusing on intergenerational transmission and emotional differentiation."
-                            },
-                            {
-                              icon: <Check size={28} className="text-teal-500" />,
-                              title: "Integrative Therapy",
-                              description: "Integrative Therapy which techniques from different therapeutic approaches tailored to the client."
-                            },
-                            {
-                              icon: <Check size={28} className="text-teal-500" />,
-                              title: "Multicultural Counseling",
-                              description: "Multicultural Counseling emphasizing on cultural awareness and competency in treatment."
-                            },
-                            {
-                              icon: <Check size={28} className="text-teal-500" />,
-                              title: "Somatic Therapy",
-                              description: "Somatic Therapy  focusing on body awareness to release traum"
-                            },
-                            {
-                              icon: <Check size={28} className="text-teal-500" />,
-                              title: "Internal Family Systems (IFS)",
-                              description: "Internal Family Systems (IFS) which works with “parts” of the self to heal inner conflict."
-                            },
-              
-              
+              {
+                icon: <Check size={28} className="text-teal-500" />,
+                title: "Psychodynamic Therapy",
+                description:
+                  "Psychodynamic Therapy which focuses on unconscious patterns, attachment, and relational issues.",
+              },
+              {
+                icon: <Check size={28} className="text-teal-500" />,
+                title: "Dialectical Behavior Therapy (DBT)",
+                description:
+                  "Dialectical Behavior Therapy (DBT) which combines CBT with mindfulness; often used for emotion regulation and BPD.",
+              },
+              {
+                icon: <Check size={28} className="text-teal-500" />,
+                title: "Rational Emotive Behavior Therapy (REBT)",
+                description:
+                  "Rational Emotive Behavior Therapy (REBT) which focuses on identifying irrational beliefs and disputing them.",
+              },
+              {
+                icon: <Check size={28} className="text-teal-500" />,
+                title: "Exposure Therapy",
+                description:
+                  "Exposure Therapy in gradual exposure to feared stimuli for phobias and PTSD",
+              },
+              {
+                icon: <Check size={28} className="text-teal-500" />,
+                title: "Behavioral Activation",
+                description:
+                  "Behavioral Activation which helps you to engage in activities that improve mood",
+              },
+              {
+                icon: <Check size={28} className="text-teal-500" />,
+                title: "Existential Therapy",
+                description:
+                  "Existential Therapy, exploring meaning, freedom, and responsibility in one’s life.",
+              },
+              {
+                icon: <Check size={28} className="text-teal-500" />,
+                title: "Family Systems Therapy",
+                description:
+                  "Family Systems Therapy: Views issues within the context of family dynamics.",
+              },
+              {
+                icon: <Check size={28} className="text-teal-500" />,
+                title: "Bowenian Family Therapy",
+                description:
+                  "Bowenian Family Therapy: focusing on intergenerational transmission and emotional differentiation.",
+              },
+              {
+                icon: <Check size={28} className="text-teal-500" />,
+                title: "Integrative Therapy",
+                description:
+                  "Integrative Therapy which techniques from different therapeutic approaches tailored to the client.",
+              },
+              {
+                icon: <Check size={28} className="text-teal-500" />,
+                title: "Multicultural Counseling",
+                description:
+                  "Multicultural Counseling emphasizing on cultural awareness and competency in treatment.",
+              },
+              {
+                icon: <Check size={28} className="text-teal-500" />,
+                title: "Somatic Therapy",
+                description:
+                  "Somatic Therapy  focusing on body awareness to release traum",
+              },
+              {
+                icon: <Check size={28} className="text-teal-500" />,
+                title: "Internal Family Systems (IFS)",
+                description:
+                  "Internal Family Systems (IFS) which works with “parts” of the self to heal inner conflict.",
+              },
+
               {
                 icon: <Shield size={28} className="text-teal-500" />,
                 title: "CBT Therapy",
-                description: "Cognitive Behavioral Therapy (CBT) because it provides a strong foundation for understanding how your thoughts influence your emotions and experiences."
+                description:
+                  "Cognitive Behavioral Therapy (CBT) because it provides a strong foundation for understanding how your thoughts influence your emotions and experiences.",
               },
               {
                 icon: <Heart size={28} className="text-teal-500" />,
                 title: "Trauma-Focused Care",
-                description: "Trauma Focused Care because compassionate and client-centered, focusing on creating safety before processing difficult experiences."
+                description:
+                  "Trauma Focused Care because compassionate and client-centered, focusing on creating safety before processing difficult experiences.",
               },
               {
                 icon: <MessageSquare size={28} className="text-teal-500" />,
                 title: "Talk Therapy",
-                description: "Through open dialogue, we'll explore your concerns in a judgment-free environment, focusing on what matters most to you."
+                description:
+                  "Through open dialogue, we'll explore your concerns in a judgment-free environment, focusing on what matters most to you.",
               },
               {
                 icon: <Star size={28} className="text-teal-500" />,
                 title: "Emotionally Focused Therapy",
-                description: "EFT helps identify emotional patterns that affect relationships and personal wellbeing, creating new pathways to connection."
+                description:
+                  "EFT helps identify emotional patterns that affect relationships and personal wellbeing, creating new pathways to connection.",
               },
               {
                 icon: <Check size={28} className="text-teal-500" />,
                 title: "Solution Focused",
-                description: "This approach emphasizes solutions rather than problems, focusing on achievable goals and positive outcomes."
+                description:
+                  "This approach emphasizes solutions rather than problems, focusing on achievable goals and positive outcomes.",
               },
             ].map((service, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-all">
+              <div
+                key={index}
+                className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-all"
+              >
                 <div className="mb-4">{service.icon}</div>
-                <h3 className="text-xl font-semibold text-gray-800 mb-2">{service.title}</h3>
+                <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                  {service.title}
+                </h3>
                 <p className="text-gray-600">{service.description}</p>
               </div>
             ))}
@@ -178,7 +229,9 @@ function AboutPage() {
 
           <div className="mt-12 text-center">
             <p className="text-gray-700 mb-6">
-              As we work together, I commit to support you all the way. From there, we can integrate other therapeutic approaches as needed to best suit your unique journey.
+              As we work together, I commit to support you all the way. From
+              there, we can integrate other therapeutic approaches as needed to
+              best suit your unique journey.
             </p>
           </div>
         </div>
@@ -231,15 +284,19 @@ function AboutPage() {
             </div>*/}
 
             <div className="bg-teal-50 p-8 rounded-lg">
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">Supervisors</h3>
-              
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">
+                Supervisors
+              </h3>
+
               <div className="bg-white p-4 rounded-lg mb-4 shadow-sm">
                 <p className="text-gray-600 italic mb-3">
                   Supervised by Bavly Kost
                 </p>
-                <p className="text-gray-800 font-medium">— Bavly Kost, Registered Psychotherapist, BEd, MA, MPS, RP, OCT</p>
+                <p className="text-gray-800 font-medium">
+                  — Bavly Kost, Registered Psychotherapist, BEd, MA, MPS, RP,
+                  OCT
+                </p>
               </div>
-            
             </div>
           </div>
         </div>
@@ -251,7 +308,9 @@ function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-white p-6 rounded-lg shadow-sm">
               <Users size={28} className="text-teal-500 mb-4" />
-              <h3 className="text-xl font-semibold text-gray-800 mb-3">Who I Work With</h3>
+              <h3 className="text-xl font-semibold text-gray-800 mb-3">
+                Who I Work With
+              </h3>
               <ul className="space-y-2 text-gray-600">
                 <li className="flex items-center">
                   <Check size={16} className="text-teal-500 mr-2" />
@@ -275,35 +334,42 @@ function AboutPage() {
                 </li>
               </ul>
             </div>
-            
+
             <div className="bg-white p-6 rounded-lg shadow-sm">
               <Calendar size={28} className="text-teal-500 mb-4" />
-              <h3 className="text-xl font-semibold text-gray-800 mb-3">Session Information</h3>
+              <h3 className="text-xl font-semibold text-gray-800 mb-3">
+                Session Information
+              </h3>
               <ul className="space-y-3 text-gray-600">
                 <li className="flex items-start">
                   <MapPin size={18} className="text-teal-500 mr-2 mt-1" />
                   <div>
-                    <span className="font-medium">Format:</span> Virtual (video/phone), In-person (by arrangement)
+                    <span className="font-medium">Format:</span> Virtual
+                    (video/phone), In-person (by arrangement)
                   </div>
                 </li>
                 <li className="flex items-start">
                   <Calendar size={18} className="text-teal-500 mr-2 mt-1" />
                   <div>
-                    <span className="font-medium">Availability:</span> Weekday evenings and all day weekends
+                    <span className="font-medium">Availability:</span> Weekday
+                    evenings and all day weekends
                   </div>
                 </li>
                 <li className="flex items-start">
                   <MapPin size={18} className="text-teal-500 mr-2 mt-1" />
                   <div>
-                    <span className="font-medium">Locations:</span> Grimsby (L3M) and Burlington (L7T)
+                    <span className="font-medium">Locations:</span> Grimsby
+                    (L3M) and Burlington (L7T)
                   </div>
                 </li>
               </ul>
             </div>
-            
+
             <div className="bg-white p-6 rounded-lg shadow-sm">
               <MessageSquare size={28} className="text-teal-500 mb-4" />
-              <h3 className="text-xl font-semibold text-gray-800 mb-3">Fees & Payment</h3>
+              <h3 className="text-xl font-semibold text-gray-800 mb-3">
+                Fees & Payment
+              </h3>
               <ul className="space-y-3 text-gray-600">
                 <li className="flex items-center">
                   <Check size={16} className="text-teal-500 mr-2" />
@@ -334,19 +400,23 @@ function AboutPage() {
       {/* Call to Action */}
       <section className="py-12 md:py-16 bg-teal-600 text-white">
         <div className="container mx-auto px-4 md:px-6 text-center">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6">Ready to Start Your Journey Towards Healing?</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-6">
+            Ready to Start Your Journey Towards Healing?
+          </h2>
           <p className="text-lg mb-8 max-w-2xl mx-auto">
-            I offer a free 15-minute consultation to see if we are a good fit. Contact me today to schedule an appointment and learn more about how I can support you.
+            I offer a free 15-minute consultation to see if we are a good fit.
+            Contact me today to schedule an appointment and learn more about how
+            I can support you.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <a 
-              href="tel:647 835 4998" 
+            <a
+              href="tel:647 835 4998"
               className="bg-white text-teal-600 hover:bg-teal-100 px-6 py-3 rounded-lg font-medium flex items-center justify-center transition-colors"
             >
               <Phone size={18} className="mr-2" /> Call 647 835 4998
             </a>
-            <a 
-              href="#contact" 
+            <a
+              href="#contact"
               className="bg-teal-700 hover:bg-teal-800 text-white px-6 py-3 rounded-lg font-medium flex items-center justify-center transition-colors"
             >
               <Mail size={18} className="mr-2" /> Send Email
