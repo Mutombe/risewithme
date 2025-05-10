@@ -16,7 +16,7 @@ function AboutPage() {
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-3xl md:text-5xl font-bold text-white mb-4">About Lilian Shonhiwa</h1>
             <p className="text-lg md:text-xl text-white opacity-90 mb-6">
-              Registered Psychotherapist (Qualifying), MACP, MBA, BBA, SSW
+              Registered Psychotherapist (Qualifying), MA Counseling Psychology, MBA, BBA, SSW
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a 
@@ -180,21 +180,15 @@ function AboutPage() {
             </div>
 
             <div className="bg-teal-50 p-8 rounded-lg">
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">Endorsements</h3>
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">Supervisors</h3>
               
               <div className="bg-white p-4 rounded-lg mb-4 shadow-sm">
                 <p className="text-gray-600 italic mb-3">
-                  "Lilian is an extremely insightful and analytical clinician who puts her whole self in finding the right path for her clients, walking with them every step of the way. Her light touch of humor and warm presence allows her to connect easily with anyone."
+                  Supervised by Bavly Kost
                 </p>
                 <p className="text-gray-800 font-medium">— Bavly Kost, Registered Psychotherapist, BEd, MA, MPS, RP, OCT</p>
               </div>
-              
-              <div className="bg-white p-4 rounded-lg shadow-sm">
-                <p className="text-gray-600 italic mb-3">
-                  "Karen Rezk endorses Lilian Shonhiwa"
-                </p>
-                <p className="text-gray-800 font-medium">— Karen Rezk, Registered Psychotherapist (Qualifying), RPQ, MDiv, MScA, RN</p>
-              </div>
+            
             </div>
           </div>
         </div>

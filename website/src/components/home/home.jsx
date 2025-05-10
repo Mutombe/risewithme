@@ -232,7 +232,7 @@ function HomePage() {
                   PSYCHOTHERAPY IN GRIMSBY, BURLINGTON & SURROUNDING AREAS
                 </h4>
                 <h1 className="text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 leading-tight text-gray-800">
-                  It starts with <span className="text-teal-600">you.</span>
+                Let the journey <span className="text-teal-600">begin.</span>
                 </h1>
                 <p className="text-lg xl:text-xl mb-8 text-gray-600 max-w-lg">
                   Therapy to help you feel whole, build deeper connections and
