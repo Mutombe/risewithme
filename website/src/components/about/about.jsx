@@ -41,13 +41,6 @@ function AboutPage() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
             <div className="order-2 md:order-1">
-              <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">Welcome</h2>
-              <p className="text-gray-700 mb-4">
-                Feeling overwhelmed due to anxiety, depression, trauma, or the effects of domestic violence? I am here to help. My desire is to make you feel safe, understood, and supported as we work towards your healing and change.
-              </p>
-              <p className="text-gray-700 mb-6">
-                I offer a calm, compassionate space to explore emotions, develop coping strategies, and rebuild confidence. Drawing from vast years of focused experience in helping women who have faced domestic violence, I also support men experiencing domestic abuse, teens navigating adolescence, couples seeking to strengthen their relationships, families working toward harmony and those experiencing pre and post natal depression.
-              </p>
               <div className="bg-teal-50 border-l-4 border-teal-500 p-4 mb-6">
                 <p className="italic text-gray-700">
                   "I work with individuals navigating depression or trauma, often rooted in relationships or family dynamics. In our initial sessions, we'll take the time to understand what you're going through and begin building a personalized plan to help you heal and regain a sense of balance and control in your life. Many of my clients start to notice a shift within the first few weeks."
