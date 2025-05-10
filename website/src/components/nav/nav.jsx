@@ -128,7 +128,7 @@ function Navbar() {
   // Navigation links
   const mainNavLinks = [
     { name: 'Home', path: 'home' },
-    { name: 'About', path: 'about' },
+    { name: 'Meet the Therapist', path: 'about' },
     { name: 'Services', path: 'services' },
   ];
 
