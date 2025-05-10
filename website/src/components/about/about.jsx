@@ -79,7 +79,7 @@ function AboutPage() {
       <section className="py-12 md:py-20 bg-gray-50">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center mb-12">
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">our Therapeutic Approach</h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">Our Therapeutic Approach</h2>
             <p className="text-gray-600 max-w-3xl mx-auto">
               We specialize in CBT, Trauma, EFT and Talk therapy to help you manage and collaboratively work on your healing. I am eager to help you navigate life issues and include life coaching if needed through Solution Focused Therapy.
             </p>
@@ -87,6 +87,68 @@ function AboutPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
+                            {
+                              icon: <Check size={28} className="text-teal-500" />,
+                              title: "Psychodynamic Therapy",
+                              description: "Psychodynamic Therapy which focuses on unconscious patterns, attachment, and relational issues."
+                            },
+                            {
+                              icon: <Check size={28} className="text-teal-500" />,
+                              title: "Dialectical Behavior Therapy (DBT)",
+                              description: "Dialectical Behavior Therapy (DBT) which combines CBT with mindfulness; often used for emotion regulation and BPD."
+                            },
+                            {
+                              icon: <Check size={28} className="text-teal-500" />,
+                              title: "Rational Emotive Behavior Therapy (REBT)",
+                              description: "Rational Emotive Behavior Therapy (REBT) which focuses on identifying irrational beliefs and disputing them."
+                            },
+                            {
+                              icon: <Check size={28} className="text-teal-500" />,
+                              title: "Exposure Therapy",
+                              description: "Exposure Therapy in gradual exposure to feared stimuli for phobias and PTSD"
+                            },
+                            {
+                              icon: <Check size={28} className="text-teal-500" />,
+                              title: "Behavioral Activation",
+                              description: "Behavioral Activation which helps you to engage in activities that improve mood"
+                            },
+                            {
+                              icon: <Check size={28} className="text-teal-500" />,
+                              title: "Existential Therapy",
+                              description: "Existential Therapy, exploring meaning, freedom, and responsibility in one’s life."
+                            },
+                            {
+                              icon: <Check size={28} className="text-teal-500" />,
+                              title: "Family Systems Therapy",
+                              description: "Family Systems Therapy: Views issues within the context of family dynamics."
+                            },
+                            {
+                              icon: <Check size={28} className="text-teal-500" />,
+                              title: "Bowenian Family Therapy",
+                              description: "Bowenian Family Therapy: focusing on intergenerational transmission and emotional differentiation."
+                            },
+                            {
+                              icon: <Check size={28} className="text-teal-500" />,
+                              title: "Integrative Therapy",
+                              description: "Integrative Therapy which techniques from different therapeutic approaches tailored to the client."
+                            },
+                            {
+                              icon: <Check size={28} className="text-teal-500" />,
+                              title: "Multicultural Counseling",
+                              description: "Multicultural Counseling emphasizing on cultural awareness and competency in treatment."
+                            },
+                            {
+                              icon: <Check size={28} className="text-teal-500" />,
+                              title: "Somatic Therapy",
+                              description: "Somatic Therapy  focusing on body awareness to release traum"
+                            },
+                            {
+                              icon: <Check size={28} className="text-teal-500" />,
+                              title: "Internal Family Systems (IFS)",
+                              description: "Internal Family Systems (IFS) which works with “parts” of the self to heal inner conflict."
+                            },
+              
+              
               {
                 icon: <Shield size={28} className="text-teal-500" />,
                 title: "CBT Therapy",

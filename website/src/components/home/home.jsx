@@ -40,6 +40,13 @@ function ServicesSection() {
   const services = [
     {
       icon: <User className="text-teal-600" size={32} />,
+      title: "Christian Counseling",
+      description:
+        "Christian counseling as part of my therapeutic services for clients who wish to integrate their faith into the healing process. This approach combines psychological principles with Biblical truths, providing a space where spiritual beliefs and emotional well-being are explored together. Whether you are facing anxiety, grief, relational struggles, or seeking personal growth, Christian counseling can support you in aligning your mental health journey with your values and faith in God. Sessions are client-centered and respectful of your individual beliefs and level of spiritual engagement.",
+      backgroundImage: "/ind.jpg",
+    },
+    {
+      icon: <User className="text-teal-600" size={32} />,
       title: "Individual Therapy",
       description:
         "One-on-one sessions focused on personal healing, growth, and development. Explore challenges and build strategies for positive change.",
