@@ -112,11 +112,6 @@ function AboutPage() {
                 title: "Solution Focused",
                 description: "This approach emphasizes solutions rather than problems, focusing on achievable goals and positive outcomes."
               },
-              {
-                icon: <BookOpen size={28} className="text-teal-500" />,
-                title: "Christian Counseling",
-                description: "Christian counseling for those who identify with Christianity, integrating faith perspectives when desired."
-              }
             ].map((service, index) => (
               <div key={index} className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-all">
                 <div className="mb-4">{service.icon}</div>
