@@ -372,7 +372,7 @@ export default function Services() {
                   </a>
                 </div>
                 <p className="text-sm mt-6 opacity-90">
-                  Supervised by Bavly Kost, RP | CRPO #12345
+                  Supervised by Bavly Kost
                 </p>
               </div>
             </div>
