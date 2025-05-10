@@ -241,7 +241,7 @@ function HomePage() {
               {/* Left content - Text */}
               <div className="lg:col-span-5 lg:pr-8">
                 <h4 className="text-teal-600 font-medium mb-2 uppercase tracking-wider">
-                  PSYCHOTHERAPY IN GRIMSBY, <strong>HAMILTON</strong>, BURLINGTON & SURROUNDING AREAS
+                  PSYCHOTHERAPY IN GRIMSBY, HAMILTON, BURLINGTON & SURROUNDING AREAS
                 </h4>
                 <h1 className="text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 leading-tight text-gray-800">
                   Let the journey <span className="text-teal-600">begin.</span>
@@ -473,7 +473,7 @@ function HomePage() {
         </div>
       </section>
 
-      {/* Testimonials Section - Enhanced with turquoise theme */}
+      {/*
       <section className="py-16 md:py-24 bg-gradient-to-b from-teal-50 to-white">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center mb-16">
@@ -524,7 +524,7 @@ function HomePage() {
               </motion.div>
             </AnimatePresence>
 
-            {/* Testimonial pagination dots */}
+            {/* Testimonial pagination dots *
             <div className="flex justify-center mt-6 space-x-2">
               {testimonials.map((_, index) => (
                 <button
@@ -540,6 +540,7 @@ function HomePage() {
           </div>
         </div>
       </section>
+      */}
 
       {/* Endorsements Section */}
       {/* Endorsements Section */}
