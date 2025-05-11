@@ -359,7 +359,7 @@ function AboutPage() {
                   <MapPin size={18} className="text-teal-500 mr-2 mt-1" />
                   <div>
                     <span className="font-medium">Locations:</span> Grimsby
-                    (L3M) and Burlington (L7T)
+                    (L3M), Hamilton and Burlington (L7T)
                   </div>
                 </li>
               </ul>
@@ -373,12 +373,17 @@ function AboutPage() {
               <ul className="space-y-3 text-gray-600">
                 <li className="flex items-center">
                   <Check size={16} className="text-teal-500 mr-2" />
-                  <span>Individual Sessions: $100</span>
+                  <span>Individual session: 50minutes $160</span>
                 </li>
                 <li className="flex items-center">
                   <Check size={16} className="text-teal-500 mr-2" />
-                  <span>Couple Sessions: $120</span>
+                  <span>Couples session: 50 minutes $175</span>
                 </li>
+              <li className="flex items-center">
+                  <Check size={16} className="text-teal-500 mr-2" />
+                  <span>Family session: 50 minutes $190</span>
+                </li>
+
                 <li className="flex items-center">
                   <Check size={16} className="text-teal-500 mr-2" />
                   <span>Sliding scale available for eligible clients</span>
