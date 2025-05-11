@@ -218,7 +218,7 @@ function ContactPage() {
                     <Mail size={22} className="text-teal-500 mr-4 mt-1" />
                     <div>
                       <p className="font-medium text-gray-800">Email</p>
-                      <p className="text-gray-600">info@raphaelatherapy.com</p>
+                      <p className="text-gray-600">info@raphaelapsychotherapy.ca</p>
                       <p className="text-gray-500 text-sm mt-1">We'll respond within 24-48 hours</p>
                     </div>
                   </div>
@@ -252,19 +252,19 @@ function ContactPage() {
                   <li className="flex items-center">
                     <Check size={18} className="text-teal-500 mr-3" />
                     <span className="text-gray-600">
-                      Individual Session: $120
+                      Individual Session: $160
                     </span>
                   </li>
                   <li className="flex items-center">
                     <Check size={18} className="text-teal-500 mr-3" />
                     <span className="text-gray-600">
-                      Couple Session: $150
+                      Couple Session: $175
                     </span>
                   </li>
                   <li className="flex items-center">
                     <Check size={18} className="text-teal-500 mr-3" />
                     <span className="text-gray-600">
-                      Family Session: $180
+                      Family Session: $190
                     </span>
                     </li>
                   <li className="flex items-center">

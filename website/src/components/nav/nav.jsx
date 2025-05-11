@@ -19,6 +19,7 @@ const AppointmentButton = ({ fullWidth = false }) => (
   <button
     className={`bg-teal-500 hover:bg-teal-600 text-white py-2 px-4 rounded-md transition-colors 
                 flex items-center justify-center text-sm font-medium shadow-md ${fullWidth ? 'w-full' : ''}`}
+    onClick={() => window.open('https://raphaelapsychotherapy.janeapp.com/', '_blank')}
     aria-label="Book an appointment"
   >
     <Calendar size={16} className="mr-2" />
@@ -314,7 +315,8 @@ function Navbar() {
             </Link>
             
             <div className="pt-4">
-              <AppointmentButton fullWidth />
+              <a href='https://raphaelapsychotherapy.janeapp.com/' target="_blank" rel="noopener noreferrer"> 
+              <AppointmentButton fullWidth /></a>
             </div>
           </div>
         </div>

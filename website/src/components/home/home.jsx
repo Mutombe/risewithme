@@ -1121,6 +1121,10 @@ function HomePage() {
                 </li>
                 <li className="flex items-start">
                   <MapPin size={18} className="mr-2 mt-1 flex-shrink-0" />
+                  <span>Hamilton, ON L8P</span>
+                </li>
+                <li className="flex items-start">
+                  <MapPin size={18} className="mr-2 mt-1 flex-shrink-0" />
                   <span>Burlington, ON L7T</span>
                 </li>
               </ul>

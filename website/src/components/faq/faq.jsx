@@ -167,9 +167,9 @@ function FAQPage() {
           <div className="flex space-x-4">
             <a href="tel:2894023685" className="flex items-center text-white hover:text-teal-200 transition-colors">
               <Phone size={16} className="mr-2" />
-              <span>(289) 402-3685</span>
+              <span>647 835 4998</span>
             </a>
-            <a href="mailto:lilian@example.com" className="flex items-center text-white hover:text-teal-200 transition-colors">
+            <a href="mailto:info@raphaelapsychotherapy.com" className="flex items-center text-white hover:text-teal-200 transition-colors">
               <Mail size={16} className="mr-2" />
               <span>Email me</span>
             </a>
