@@ -286,26 +286,6 @@ function Navbar() {
               </div>
             </div>
             
-            <div className="py-2">
-              <p className="text-base font-medium text-gray-700 mb-2">Therapists</p>
-              <div className="pl-4 space-y-2">
-                {therapistsDropdown.map((item) => (
-                  <Link
-                    key={item.path}
-                    to={`/${item.path}`}
-                    onClick={() => {
-                      setCurrentPage(item.path);
-                      closeMobileMenu();
-                    }}
-                    className={`block text-sm ${
-                      currentPage === item.path ? 'text-teal-500' : 'text-gray-600'
-                    }`}
-                  >
-                    {item.name}
-                  </Link>
-                ))}
-              </div>
-            </div>
             
             <Link
               to="/contact"
