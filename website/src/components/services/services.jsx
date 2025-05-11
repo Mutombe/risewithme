@@ -359,7 +359,7 @@ export default function Services() {
                 </p>
                 <div className="flex flex-col sm:flex-row justify-center gap-4">
                   <a
-                    href="https://janelink.com"
+                    href="https://raphaelapsychotherapy.janeapp.com/"
                     className="bg-white text-teal-600 px-6 py-3 rounded-lg font-medium hover:bg-teal-50 transition-colors"
                   >
                     Book Through Jane

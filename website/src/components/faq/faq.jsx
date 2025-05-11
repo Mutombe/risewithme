@@ -276,10 +276,10 @@ function FAQPage() {
                 <span>Call Now</span>
               </a>
               <Link 
-                to="/contact"
+                to="/https://raphaelapsychotherapy.janeapp.com/"
                 className="bg-transparent border-2 border-white hover:bg-white hover:text-teal-600 font-medium py-3 px-6 rounded-md transition-colors flex items-center justify-center"
               >
-                <span>Contact Page</span>
+                <span>Book through Jane</span>
               </Link>
             </div>
           </div>
