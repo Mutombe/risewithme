@@ -139,11 +139,6 @@ function Navbar() {
     { name: 'Self-Help Tools', path: 'resources/' }
   ];
 
-  const therapistsDropdown = [
-    { name: 'Our Team', path: 'therapists/' },
-    { name: 'Specialties', path: 'therapists/' },
-    { name: 'Training', path: 'therapists/' }
-  ];
 
   return (
     <nav 
