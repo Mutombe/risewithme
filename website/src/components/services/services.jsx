@@ -162,8 +162,7 @@ export default function Services() {
               Therapy Services
             </h1>
             <p className="text-lg md:text-xl text-white opacity-90 mb-6">
-              Compassionate, evidence-based care for individuals, couples,
-              families, and seniors
+            Are you feeling the weight of racism, discrimination, or racial trauma? You’re not alone—and you don’t have to carry this burden by yourself. Therapy can offer a safe, affirming space to process your experiences, heal from generational and systemic harm, and reclaim your sense of self and power. Whether you’re dealing with daily microaggressions, workplace discrimination, internalized racism, or the lasting effects of intergenerational trauma, we’re here to support you with culturally responsive, trauma-informed care. Your voice matters. Your healing matters. Let’s work together toward justice, wholeness, and peace.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a

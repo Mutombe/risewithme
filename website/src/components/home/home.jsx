@@ -33,6 +33,7 @@ import { Link } from "react-router-dom";
 import { Toaster, toast } from "sonner";
 import { Globe } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+
 function ServicesSection() {
   const [hovered, setHovered] = useState(null);
   const navigate = useNavigate();
