@@ -6,7 +6,7 @@ import { Link, useLocation } from 'react-router-dom';
 // Logo Component with new turquoise color scheme
 const Logo = () => (
   <div className="flex items-center">
-    <img src="/rlogo.jpeg" alt="Logo" className="h-10 w-16" />
+    <img src="/2logo.jpeg" alt="Logo" className="h-10 w-16" />
     <span className=" text-xl font-semibold md:inline-block">
       <span className="text-teal-500">Raphaela</span>
       <span className="text-cyan-800"> Psychotherapy</span>
