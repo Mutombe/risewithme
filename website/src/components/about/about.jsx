@@ -92,7 +92,7 @@ function AboutPage() {
               <div className="relative">
                 <div className="absolute -top-4 -left-4 w-full h-full bg-teal-200 rounded-lg"></div>
                 <img
-                  src="/lilian.jpeg"
+                  src="/lilian4.jpeg"
                   alt="Lilian Shonhiwa"
                   className="w-64 md:w-80 h-auto object-cover rounded-lg shadow-lg relative z-10"
                 />
