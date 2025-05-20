@@ -21,6 +21,7 @@ import {
   Baby,
   HandHeart,
   Sparkles,
+  ScanFace
 } from "lucide-react";
 import { useState } from "react";
 import { motion } from "framer-motion";
@@ -71,6 +72,13 @@ export default function Services() {
       title: "Teen Therapy",
       content:
         "The teenage years are full of big emotions, tough choices, and pressure to “figure it all out.” We give teens a safe, nonjudgmental space to explore their thoughts, navigate social stress, school anxiety, or family conflicts, and rebuild confidence. Using relatable approaches like mindfulness, CBT, and creative expression, we focus on your goals, whether it’s managing overwhelming feelings, improving relationships, or finding your authentic self. No lectures, no labels just real talk and practical tools to help you thrive, not just survive. Let’s rewrite the script together.",
+      backgroundImage: "/teen.webp",
+    },
+        {
+      icon: <ScanFace className="text-teal-600" size={32} />,
+      title: "Racial Trauma",
+      content:
+        "Are you feeling the weight of racism, discrimination, or racial trauma? You’re not alone—and you don’t have to carry this burden by yourself. Therapy can offer a safe, affirming space to process your experiences, heal from generational and systemic harm, and reclaim your sense of self and power. Whether you’re dealing with daily microaggressions, workplace discrimination, internalized racism, or the lasting effects of intergenerational trauma, we’re here to support you with culturally responsive, trauma-informed care. Your voice matters. Your healing matters. Let’s work together toward justice, wholeness, and peace.",
       backgroundImage: "/teen.webp",
     },
   ];
@@ -162,7 +170,7 @@ export default function Services() {
               Therapy Services
             </h1>
             <p className="text-lg md:text-xl text-white opacity-90 mb-6">
-            Are you feeling the weight of racism, discrimination, or racial trauma? You’re not alone—and you don’t have to carry this burden by yourself. Therapy can offer a safe, affirming space to process your experiences, heal from generational and systemic harm, and reclaim your sense of self and power. Whether you’re dealing with daily microaggressions, workplace discrimination, internalized racism, or the lasting effects of intergenerational trauma, we’re here to support you with culturally responsive, trauma-informed care. Your voice matters. Your healing matters. Let’s work together toward justice, wholeness, and peace.
+
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a

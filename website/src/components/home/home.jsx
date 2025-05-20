@@ -339,6 +339,7 @@ function HomePage() {
 
           {/* Service highlights with icons - desktop only */}
           <div className="absolute bottom-0 left-0 right-0 bg-white shadow-md py-8">
+            <br></br>
             <div className="container mx-auto px-4 md:px-6">
               <div className="grid grid-cols-3 gap-8">
                 <div className="flex items-center justify-center">
@@ -385,24 +386,10 @@ function HomePage() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
-              <div className="rounded-2xl overflow-hidden shadow-xl">
-                <img
-                  src="/lilian.jpeg"
-                  alt="Lilian Shonhiwa, Registered Psychotherapist"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="absolute -bottom-6 -right-6 bg-teal-500 text-white p-6 rounded-xl shadow-lg max-w-xs">
-                <h3 className="text-xl font-semibold mb-2">Lilian Shonhiwa</h3>
-                <p className="text-sm opacity-90">
-                  Registered Psychotherapist (Qualifying), MA Counseling Psychology, MBA, BBA, SSW
-                </p>
-              </div>
             </div>
 
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-                Meet Your Therapist
               </h2>
               <p className="text-lg text-gray-600 mb-6">
                 Feeling overwhelmed due to anxiety, depression, trauma, or the
