@@ -65,7 +65,7 @@ function ServicesSection() {
       title: "Racial Trauma",
       description:
         "Are you feeling the weight of racism, discrimination, or racial trauma? You’re not alone—and you don’t have to carry this burden by yourself. Therapy can offer a safe, affirming space to process your experiences, heal from generational and systemic harm, and reclaim your sense of self and power. Whether you’re dealing with daily microaggressions, workplace discrimination, internalized racism, or the lasting effects of intergenerational trauma, we’re here to support you with culturally responsive, trauma-informed care. Your voice matters. Your healing matters. Let’s work together toward justice, wholeness, and peace.",
-      backgroundImage: "/lilian.jpeg",
+      backgroundImage: "/lilian4.jpeg",
     },
     {
       icon: <Users className="text-teal-600" size={32} />,
