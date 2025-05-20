@@ -21,7 +21,7 @@ import {
   Baby,
   HandHeart,
   Sparkles,
-  ScanFace
+  ScanFace,
 } from "lucide-react";
 import { useState } from "react";
 import { motion } from "framer-motion";
@@ -74,7 +74,7 @@ export default function Services() {
         "The teenage years are full of big emotions, tough choices, and pressure to “figure it all out.” We give teens a safe, nonjudgmental space to explore their thoughts, navigate social stress, school anxiety, or family conflicts, and rebuild confidence. Using relatable approaches like mindfulness, CBT, and creative expression, we focus on your goals, whether it’s managing overwhelming feelings, improving relationships, or finding your authentic self. No lectures, no labels just real talk and practical tools to help you thrive, not just survive. Let’s rewrite the script together.",
       backgroundImage: "/teen.webp",
     },
-        {
+    {
       icon: <ScanFace className="text-teal-600" size={32} />,
       title: "Racial Trauma",
       content:
@@ -169,9 +169,7 @@ export default function Services() {
             <h1 className="text-3xl md:text-5xl font-bold text-white mb-4">
               Therapy Services
             </h1>
-            <p className="text-lg md:text-xl text-white opacity-90 mb-6">
-
-            </p>
+            <p className="text-lg md:text-xl text-white opacity-90 mb-6"></p>
             <div className="flex flex-wrap justify-center gap-4">
               <a
                 href="tel:6478354998"
@@ -366,7 +364,9 @@ export default function Services() {
                 </p>
                 <div className="flex flex-col sm:flex-row justify-center gap-4">
                   <a
-                    href="https://raphaelapsychotherapy.janeapp.com/" target="_blank" rel="noopener noreferrer"
+                    href="https://raphaelapsychotherapy.janeapp.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="bg-white text-teal-600 px-6 py-3 rounded-lg font-medium hover:bg-teal-50 transition-colors"
                   >
                     Book Through Jane
