@@ -261,7 +261,7 @@ function HomePage() {
                   Let the journey <span className="text-teal-600">begin.</span>
                 </h1>
                 <p className="text-lg xl:text-xl mb-8 text-gray-600 max-w-lg">
-                  Build deeper connections and
+                  Build deeper connections with self and
                   live with more meaning.
                 </p>
 
