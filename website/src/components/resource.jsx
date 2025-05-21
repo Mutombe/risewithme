@@ -283,7 +283,7 @@ function ResourcesPage() {
         </div>
       </section>
 
-      {/* Workshops and Events Section - Added */}
+      {/* Workshops and Events Section - Added
       <section className="py-16 md:py-24 bg-gray-50">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center mb-16">
@@ -343,7 +343,7 @@ function ResourcesPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section - Added */}
       <section className="py-16 md:py-20">

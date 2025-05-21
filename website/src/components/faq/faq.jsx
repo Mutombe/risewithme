@@ -229,7 +229,7 @@ function FAQPage() {
           </div>
         ))}
 
-        {/* Additional Resources Section */}
+        {/* Additional Resources Section
         <div className="bg-teal-50 rounded-xl p-6 md:p-8 mt-12">
           <h2 className="text-2xl font-bold text-gray-800 mb-4">Additional Resources</h2>
           <p className="text-gray-600 mb-6">
@@ -256,7 +256,7 @@ function FAQPage() {
               </a>
             ))}
           </div>
-        </div>
+        </div>*/}
 
         {/* CTA Section */}
         <div className="bg-gradient-to-r from-teal-500 to-cyan-600 text-white rounded-xl p-8 mt-12 shadow-md">
