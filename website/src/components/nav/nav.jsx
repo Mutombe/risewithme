@@ -170,16 +170,7 @@ function Navbar() {
               </Link>
             ))}
             
-            {/* Resource Dropdown */}
-            <DropdownMenu 
-              title="Resources" 
-              items={resourcesDropdown} 
-              isActive={currentPage.startsWith('resources')}
-              currentPage={currentPage}
-              setCurrentPage={setCurrentPage}
-            />
-            
-            {/* Therapists Dropdown */}
+
 
             
             <Link

@@ -101,7 +101,7 @@ function FAQPage() {
         {
           id: 'cost',
           question: 'What are your fees and do you accept insurance?',
-          answer: 'Individual sessions are $100, and couples sessions are $120. While I don\'t directly bill insurance companies, I provide receipts that you can submit to your provider for potential reimbursement. Many extended health plans cover services from Registered Psychotherapists. For clients experiencing financial hardship, I offer a limited number of sliding scale spots—please inquire about availability during our initial consultation.'
+          answer: 'Individual sessions(50min) are $160, couples sessions(50min) are $175 and family sessions(50min) are $190. While I don\'t directly bill insurance companies, I provide receipts that you can submit to your provider for potential reimbursement. Many extended health plans cover services from Registered Psychotherapists. For clients experiencing financial hardship, I offer a limited number of sliding scale spots—please inquire about availability during our initial consultation.'
         },
         {
           id: 'cancellation',
